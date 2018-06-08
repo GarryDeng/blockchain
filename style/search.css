@@ -1,0 +1,120 @@
+.position-absolute-search {
+  position: relative;
+  height: 147px;
+  background-color: #F7F7F7;
+  padding-top: 97px;
+}
+.position-absolute-search .position-relative {
+  width: 985px;
+  margin: 0 auto;
+  position: relative;
+}
+.position-absolute-search .position-relative .search {
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid #FFF;
+  display: block;
+  line-height: 50px;
+  font-size: 24px;
+  padding: 10px 20px;
+  color: #000;
+  background-color: #FFF;
+}
+.position-absolute-search .position-relative .iconfont {
+  position: absolute;
+  right: -10px;
+  top: 22px;
+  font-size: 28px;
+  color: #000;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+.search-result-success .search-content {
+  width: 1280px;
+  margin: 0 auto;
+  position: relative;
+}
+.search-result-success .search-content .search-text-total {
+  padding-top: 36px;
+  padding-bottom: 32px;
+  line-height: 1em;
+  font-size: 24px;
+  color: #000;
+}
+.search-result-success .search-content .iconfont {
+  font-size: 24px;
+  transform: rotate(-90deg);
+  display: inline-block;
+  color: #c2c2c2;
+  padding: 0 3px;
+}
+.search-result-success .search-content .result-list a {
+  display: block;
+  border-top: 8px solid #F7F7F7;
+  padding-top: 67px;
+  padding-bottom: 36px;
+}
+.search-result-success .search-content .result-list a:hover {
+  text-decoration: none;
+}
+.search-result-success .search-content .result-list a .total-title {
+  width: 302px;
+  float: left;
+  line-height: 60px;
+  height: 60px;
+  overflow: hidden;
+  box-shadow: 0 0 2px 1px #e2e2e2;
+  border-radius: 3px;
+  position: relative;
+}
+.search-result-success .search-content .result-list a .total-title .image {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  padding: 0 19px;
+  vertical-align: top;
+  margin-top: 12px;
+}
+.search-result-success .search-content .result-list a .total-title span {
+  display: inline-block;
+  padding-right: 48px;
+  color: #000;
+  font-size: 24px;
+  width: 170px;
+  position: relative;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 60px;
+}
+.search-result-success .search-content .result-list a .total-title .iconfont {
+  font-size: 24px;
+  color: #000;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 24px;
+  top: 18px;
+  padding: 0;
+  transform-origin: center;
+}
+.search-result-success .search-content .result-list a .content-text {
+  width: 913px;
+  float: right;
+  text-align: justify;
+  font-size: 18px;
+  line-height: 1.4em;
+  color: #000;
+}
+.search-result-success .search-content .result-list .get-load-more {
+  width: 260px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 22px;
+  color: #FFF;
+  background-color: #000;
+  margin: 70px auto 120px auto;
+  cursor: pointer;
+}
