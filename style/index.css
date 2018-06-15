@@ -67,6 +67,9 @@
   position: relative;
   overflow: hidden;
 }
+.index-block-list.index-block-dark {
+  padding-bottom: 130px;
+}
 .index-block-list .title {
   padding-top: 52px;
   line-height: 1em;
@@ -121,10 +124,11 @@
   line-height: 60px;
   height: 60px;
   border-radius: 3px;
-  box-shadow: 0 0 1px 1px #e2e2e2;
+  box-shadow: 0 2px 10px 0px #e2e2e2;
   float: left;
   margin-right: 34px;
   margin-bottom: 34px;
+  background-color: #FFF;
 }
 .index-block-list .list .list-width a img {
   width: 30px;
@@ -156,6 +160,9 @@
   display: inline-block;
   vertical-align: middle;
 }
+.index-block-list .list .arrow {
+  display: none;
+}
 .index-block-white,
 .index-block-gray {
   background-color: #F7F7F7;
@@ -171,7 +178,8 @@
 }
 .index-block-white .list .list-width a,
 .index-block-gray .list .list-width a {
-  margin-right: 50px;
+  margin-right: 56px;
+  min-width: 262px;
 }
 .index-block-gray {
   background-color: #FFF;
@@ -181,4 +189,307 @@
 }
 .index-bg-white .list {
   border-bottom: 8px solid #F7F7F7;
+}
+.index-block-dark {
+  background-color: #F7F7F7;
+}
+.index-block-dark .list {
+  border-bottom: 8px solid #ececec;
+}
+.paper-index-padding {
+  padding-bottom: 130px;
+}
+@media screen and (max-width: 1320px) {
+  .header-banner .position-absolute-search .search {
+    width: 780px;
+    font-size: 22px;
+    padding: 6px 12px;
+  }
+  .header-banner .position-absolute-search .position-relative .iconfont {
+    top: 16px;
+    right: 20px;
+  }
+  .header-banner .position-absolute-search .hot-search {
+    padding-top: 18px;
+  }
+  .index-block-list .title {
+    width: 980px;
+    font-size: 28px;
+  }
+  .index-block-list .list {
+    width: 829px;
+    padding-left: 150px;
+  }
+  .index-block-list .list .title-deal {
+    font-size: 20px;
+    width: 120px;
+  }
+  .index-block-list .list .list-width {
+    width: 890px;
+  }
+  .index-block-list .list .list-width a {
+    min-width: 170px;
+    padding-right: 15px;
+    line-height: 50px;
+    height: 50px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .index-block-list .list .list-width a span {
+    font-size: 20px;
+  }
+  .index-block-white .list,
+  .index-block-gray .list {
+    width: 980px;
+    padding-left: 0;
+  }
+  .index-block-white .list .list-width,
+  .index-block-gray .list .list-width {
+    width: 1100px;
+  }
+  .index-block-white .list .list-width a,
+  .index-block-gray .list .list-width a {
+    min-width: 230px;
+    margin-right: 120px;
+  }
+  .paper-index-padding {
+    padding-bottom: 120px;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .header-banner .position-absolute-search .search {
+    width: 580px;
+    font-size: 12px;
+    padding: 2px 12px;
+    line-height: 38px;
+  }
+  .header-banner .position-absolute-search .position-relative .iconfont {
+    top: 6px;
+    right: 20px;
+    width: 18px;
+    height: 18px;
+  }
+  .header-banner .position-absolute-search .hot-search {
+    padding-top: 8px;
+  }
+  .header-banner .position-absolute-search .hot-search a,
+  .header-banner .position-absolute-search .hot-search span {
+    font-size: 12px;
+  }
+  .index-block-list .title {
+    width: 680px;
+    font-size: 22px;
+    padding-top: 32px;
+    padding-bottom: 20px;
+  }
+  .index-block-list .list {
+    width: 560px;
+    padding-left: 120px;
+    padding-top: 32px;
+    padding-bottom: 16px;
+  }
+  .index-block-list .list .title-deal {
+    font-size: 14px;
+    width: 100px;
+    top: 32px;
+  }
+  .index-block-list .list .title-deal .iconfont {
+    font-size: 16px;
+    top: 0;
+    height: 16px;
+    width: 16px;
+  }
+  .index-block-list .list .list-width {
+    width: 590px;
+  }
+  .index-block-list .list .list-width a {
+    min-width: 92px;
+    padding-right: 10px;
+    line-height: 30px;
+    height: 36px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    display: block;
+  }
+  .index-block-list .list .list-width a span {
+    font-size: 12px;
+  }
+  .index-block-list .list .list-width a img {
+    width: 18px;
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 8px;
+    margin-top: 0;
+  }
+  .index-block-list .list .list-width a.get-more p {
+    font-size: 14px;
+    right: 30px;
+    bottom: 12px;
+  }
+  .index-block-list .list .list-width a.get-more p i {
+    font-size: 14px;
+  }
+  .index-block-white .list,
+  .index-block-gray .list {
+    width: 680px;
+    padding-left: 0;
+  }
+  .index-block-white .list .list-width,
+  .index-block-gray .list .list-width {
+    width: 700px;
+  }
+  .index-block-white .list .list-width a,
+  .index-block-gray .list .list-width a {
+    min-width: 200px;
+    margin-right: 20px;
+  }
+  .paper-index-padding {
+    padding-bottom: 90px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .header-banner {
+    width: 10rem;
+    height: 7.41333333rem;
+    overflow: hidden;
+  }
+  .header-banner img.bg {
+    height: 100%;
+    width: auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .header-banner .position-absolute-search {
+    transform: translate(-50%, -12%);
+  }
+  .header-banner .position-absolute-search .position-relative .search {
+    width: 8.8rem;
+    padding: .3rem;
+    line-height: 0.54666667rem;
+    font-size: 0.34666667rem;
+  }
+  .header-banner .position-absolute-search .position-relative .iconfont {
+    font-size: 0.74666667rem;
+    top: 0.16rem;
+    right: 0.53333333rem;
+  }
+  .header-banner .position-absolute-search .hot-search {
+    width: 8.8rem;
+    text-align: left;
+    padding-top: 0.26666667rem;
+  }
+  .header-banner .position-absolute-search .hot-search span {
+    font-size: 0.29333333rem;
+  }
+  .header-banner .position-absolute-search .hot-search a {
+    font-size: 0.26666667rem;
+    margin: 0 2px;
+  }
+  .index-block-list .title {
+    width: 9rem;
+    font-size: 0.58666667rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+  }
+  .index-block-list .list {
+    width: 9rem;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 1.06666667rem;
+  }
+  .index-block-list .list .title-deal {
+    display: block;
+    position: relative;
+    top: 0;
+    font-size: 0.4rem;
+    color: #000000;
+    padding-top: 0.46666667rem;
+    padding-bottom: 0.06666667rem;
+    opacity: .5;
+  }
+  .index-block-list .list .title-deal .iconfont {
+    display: none;
+  }
+  .index-block-list .list .list-width {
+    width: 9.4rem;
+  }
+  .index-block-list .list .list-width a {
+    width: 2.8rem;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    margin-top: 0.4rem;
+    margin-right: 0.26666667rem;
+    margin-bottom: 0;
+    padding: 0;
+    box-shadow: 0 1px 2px 0px #e2e2e2;
+  }
+  .index-block-list .list .list-width a img {
+    width: 0.4rem;
+    padding: 0;
+    margin-left: 0.24rem;
+    line-height: 1.2rem;
+    margin-top: -0.10666667rem;
+  }
+  .index-block-list .list .list-width a span {
+    width: 1.57333333rem;
+    display: block;
+    float: right;
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 0.34666667rem;
+    margin-right: 0.25333333rem;
+  }
+  .index-block-list .list .list-width a.get-more {
+    display: none;
+  }
+  .index-block-list .list .arrow {
+    position: absolute;
+    right: 0;
+    bottom: 0.24rem;
+    width: 0.53333333rem;
+    height: 0.53333333rem;
+    display: block;
+  }
+  .index-block-list .list .arrow::before {
+    content: "";
+    border-top: 8px solid #999;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -3px;
+    margin-top: -4px;
+  }
+  .index-block-list.index-block-dark {
+    padding-bottom: 1.2rem;
+  }
+  .index-block-dark .list {
+    border-bottom: 0.10666667rem solid #ececec;
+  }
+  .index-block-white .list .list-width,
+  .index-block-gray .list .list-width {
+    width: 9.6rem;
+  }
+  .index-block-white .list .list-width a,
+  .index-block-gray .list .list-width a {
+    width: 4.2rem;
+    min-width: 4.2rem;
+    margin-right: .53rem;
+  }
+  .index-block-white .list .list-width a img,
+  .index-block-gray .list .list-width a img {
+    width: 0.53333333rem;
+  }
+  .index-block-white .list .list-width a span,
+  .index-block-gray .list .list-width a span {
+    width: 2.8rem;
+    text-align: right;
+  }
+  .paper-index-padding {
+    padding-bottom: 1.2rem;
+  }
 }

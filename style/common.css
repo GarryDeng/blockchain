@@ -153,11 +153,13 @@ header .common-header .max-width-menu {
   margin: 0 auto;
   position: relative;
 }
+header .common-header .max-width-menu .phone-menu-list {
+  display: none;
+}
 header .common-header .max-width-menu .logo {
   width: 138px;
   height: 110px;
   color: #FFF;
-  border: 1px solid #FFF;
 }
 header .common-header .max-width-menu .menu-all {
   margin-left: 30px;
@@ -253,5 +255,183 @@ header .common-header .max-width-menu .menu-list a:nth-child(7n) {
   }
   header .common-header .max-width-menu .menu-list a:nth-child(7n) {
     margin-right: 35px;
+  }
+}
+@media screen and (max-width: 1320px) {
+  header {
+    height: 88px;
+  }
+  header .common-header {
+    height: 88px;
+  }
+  header .common-header .max-width-menu {
+    line-height: 88px;
+    padding: 0 30px;
+  }
+  header .common-header .max-width-menu .menu-all {
+    font-size: 20px;
+    padding-right: 28px;
+    margin-left: 12px;
+  }
+  header .common-header .max-width-menu .logo {
+    width: 110.4px;
+    height: 88px;
+  }
+  header .common-header .max-width-menu .menu-list {
+    width: 650px;
+    padding-top: 20px;
+  }
+  header .common-header .max-width-menu .menu-list a {
+    font-size: 18px;
+    margin-top: 16px;
+  }
+  header .common-header .max-width-menu .menu-list a:nth-child(5n) {
+    margin-right: 0;
+  }
+  header .common-header .max-width-menu .menu-list a:nth-child(7n) {
+    margin-right: 35px;
+  }
+  .common-footer .content-list {
+    width: 980px;
+  }
+  .common-footer .content-list .e-mail-icon {
+    width: 820px;
+  }
+  .common-footer .content-list .e-mail-icon .e-mail {
+    width: 780px;
+    line-height: 38px;
+  }
+  .common-footer .content-list .e-mail-icon .iconfont {
+    right: 10px;
+    top: 14px;
+  }
+  .common-footer .content-list .copy-right {
+    font-size: 18px;
+    padding-bottom: 20px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  header {
+    height: 88px;
+  }
+  header .common-header {
+    height: 88px;
+  }
+  header .common-header .max-width-menu {
+    line-height: 88px;
+    padding: 0 30px;
+  }
+  header .common-header .max-width-menu .menu-all {
+    font-size: 16px;
+    padding-right: 18px;
+    margin-left: 12px;
+  }
+  header .common-header .max-width-menu .menu-all::before {
+    right: 0;
+    top: 50%;
+    margin-top: -4px;
+    border-top: 8px solid #FFF;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+  }
+  header .common-header .max-width-menu .logo {
+    width: 110.4px;
+    height: 88px;
+  }
+  header .common-header .max-width-menu .menu-list {
+    width: 440px;
+    padding-top: 20px;
+  }
+  header .common-header .max-width-menu .menu-list a {
+    font-size: 14px;
+    margin-top: 16px;
+    margin-right: 12px;
+  }
+  header .common-header .max-width-menu .menu-list a:nth-child(5n) {
+    margin-right: 12px;
+  }
+  header .common-header .max-width-menu .menu-list a:nth-child(5) {
+    margin-right: 0;
+  }
+  header .common-header .max-width-menu .menu-list a:nth-child(7n) {
+    margin-right: 12px;
+  }
+  .common-footer .content-list {
+    width: 680px;
+  }
+  .common-footer .content-list .e-mail-icon {
+    width: 620px;
+  }
+  .common-footer .content-list .e-mail-icon .e-mail {
+    width: 580px;
+    line-height: 28px;
+  }
+  .common-footer .content-list .e-mail-icon .iconfont {
+    right: 10px;
+    top: 9px;
+  }
+  .common-footer .content-list .copy-right {
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+}
+@media screen and (max-width: 750px) {
+  * {
+    box-sizing: border-box;
+  }
+  header {
+    height: 1.06666667rem;
+  }
+  header .common-header {
+    line-height: 1.06666667rem;
+    height: 1.17333333rem;
+    width: 10rem;
+  }
+  header .common-header .max-width-menu {
+    line-height: 1.17333333rem;
+    padding: 0 .3rem;
+    width: 10rem;
+  }
+  header .common-header .max-width-menu .phone-menu-list {
+    display: block;
+  }
+  header .common-header .max-width-menu .phone-menu-list a {
+    color: #FFF;
+    font-size: 0.34666667rem;
+    margin: 0 0.21333333rem;
+  }
+  header .common-header .max-width-menu .phone-menu-list a:hover {
+    text-decoration: none;
+  }
+  header .common-header .max-width-menu .logo {
+    width: 1.472rem;
+    height: 1.17333333rem;
+  }
+  header .common-header .max-width-menu .menu-all {
+    display: none;
+  }
+  header .common-header .max-width-menu .menu-list {
+    display: none;
+  }
+  .common-footer .content-list {
+    width: 10rem;
+    padding-top: 1.26666667rem;
+  }
+  .common-footer .content-list .e-mail-icon {
+    width: 8.8rem;
+  }
+  .common-footer .content-list .e-mail-icon .e-mail {
+    width: 100%;
+  }
+  .common-footer .content-list .href-list {
+    height: 4.37333333rem;
+    padding: .3rem;
+    line-height: 0.54666667rem;
+    font-size: 0.34666667rem;
+  }
+  .common-footer .content-list .href-list .iconfont {
+    font-size: 0.90666667rem;
+    right: 0.26666667rem;
+    top: 0.21333333rem;
   }
 }

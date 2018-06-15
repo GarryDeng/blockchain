@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>首页</title>
+    <link rel="stylesheet" href="style/common.css">
+    <link rel="stylesheet" href="style/index.css">
+    <script src="js/rem.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="common-header">
+            <div class="max-width-menu clear">
+                <div class="fl logo" onclick="location.href='./'">LOGO</div>
+                <div class="fr phone-menu-list">
+                    <a href="">交易所</a>
+                    <a href="">信息网</a>
+                    <a href="">落地项目</a>
+                    <a href="">钱包</a>
+                    <a href="">游戏</a>
+                </div>
+                <div class="fr menu-all">全部分类</div>
+                <div class="fr menu-list">
+                    <div class="clear">
+                        <a href="">区块链交易所</a>
+                        <a href="">区块链信息网</a>
+                        <a href="">落地项目</a>
+                        <a href="">数字货币钱包</a>
+                        <a href="">区块链游戏</a>
+                        <a href="">挖矿设备</a>
+                        <a href="">白皮书之家</a>
+                        <a href="">区块链交易所</a>
+                        <a href="">区块链信息网</a>
+                        <a href="">落地项目</a>
+                        <a href="">数字货币钱包</a>
+                        <a href="">区块链游戏</a>
+                        <a href="">挖矿设备</a>
+                        <a href="">白皮书之家</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script>
+        document.getElementsByClassName('menu-all')[0].onclick = function () {
+            var scrWidth = document.documentElement.clientWidth > 1320 ? 110 : 88;
+            if (this.className.indexOf('active') != -1) {
+                document.getElementsByClassName('common-header')[0].style.height = 110 + 'px';
+                return this.className = this.className.replace(' active', '');
+            }
+            document.getElementsByClassName('common-header')[0].style.height = 'auto';
+            this.className += ' active';
+        }
+    </script>
+    <div class="header-banner">
+        <img class="bg" src="images/banner.jpg" alt="火星">
+        <div class="position-absolute-search">
+            <div class="position-relative">
+                <input class="search" placeholder="搜索一下" type="text">
+                <i id="search" class="iconfont">&#xe641;</i>
+            </div>
+            <div class="hot-search">
+                <span>热门搜索：</span>
+                <a href="">币安网</a>
+                <a href="">火币网</a>
+                <a href="">OKEX</a>
+                <a href="">gate.io</a>
+                <a href="">polonium</a>
+                <a href="">otcbtc</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        // 搜索一下
+        document.getElementById('search').onclick = function () {
+            var val = document.getElementsByClassName('search')[0].value;
+            if (val == '') return false;
+            location.href = '/search.html';
+        }
+    </script>
+    <div class="index-block-list index-block-gray paper-index-padding">
+        <div class="title">
+            白皮书之家
+        </div>
+        <div class="list">
+            <div class="clear list-width">
+                <a href="">
+                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
+                    <span>白皮书</span>
+                </a>
+                <a href="">
+                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
+                    <span>白皮书</span>
+                </a>
+                <a href="">
+                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
+                    <span>白皮书</span>
+                </a>
+                <a href="">
+                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
+                    <span>白皮书</span>
+                </a>
+                <a href="">
+                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
+                    <span>白皮书</span>
+                </a>
+                <a href="">
+                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
+                    <span>白皮书</span>
+                </a>
+                <a href="">
+                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
+                    <span>白皮书项目书</span>
+                </a>
+                <a href="">
+                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
+                    <span>白皮书项目书白皮书项目书</span>
+                </a>
+
+            </div>
+            <i class="arrow"></i>
+        </div>
+    </div>
+    <footer>
+        <div class="common-footer">
+            <div class="content-list">
+                <div class="e-mail-icon">
+                    <input class="e-mail" placeholder="E-mail" type="text">
+                    <i class="iconfont">&#xe606;</i>
+                </div>
+                <div class="href-list"></div>
+                <p class="copy-right">Copyright © 21号星球</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

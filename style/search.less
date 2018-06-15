@@ -64,7 +64,7 @@
                     line-height: 60px;
                     height: 60px;
                     overflow: hidden;
-                    box-shadow: 0 0 2px 1px #e2e2e2;
+                    box-shadow: 0 2px 10px 0 #e2e2e2;
                     border-radius: 3px;
                     position: relative;
                     .image{
@@ -119,6 +119,144 @@
                 background-color: #000;
                 margin: 70px auto 120px auto;
                 cursor: pointer;
+            }
+        }
+    }
+}
+@media screen and (max-width:1330px) {
+    .search-result-success{
+        .search-content{
+            width: 960px;
+            .result-list{
+                a .content-text{
+                    width: 600px;
+                }
+                .get-load-more{
+                    width: 240px;
+                }
+            }
+        }
+    }
+    .position-absolute-search{
+        .position-relative{
+            width: 900px;
+            .search{
+                box-sizing: border-box;
+            }
+            .iconfont{
+                right: 16px;
+            }
+        }
+    }
+}
+@media screen and (max-width:1024px) {
+    .search-result-success{
+        .search-content{
+            width: 9.4rem;
+            .result-list{
+                a{
+                    .content-text{
+                        width: 600/102.4rem;
+                    }
+                    .total-title{
+                        width: 302/102.4rem;
+                        span{
+                            width: 170/102.4rem;
+                            padding-right: 0;
+                        }
+                        .image{
+                            padding: 0 19/75rem;
+                        }
+                    }
+                }
+                .get-load-more{
+                    width: 240px;
+                }
+            }
+        }
+    }
+    .position-absolute-search{
+        .position-relative{
+            width: 9rem;
+            .search{
+                box-sizing: border-box;
+            }
+            .iconfont{
+                right: 16px;
+            }
+        }
+    }
+}
+@media screen and (max-width:750px) {
+    .position-absolute-search{
+        height: 240/75rem;
+        padding-top: 77/75rem;
+        .position-relative{
+            width: 9rem;
+            .search{
+                line-height: 50/75rem;
+                font-size: 26/75rem;
+                padding: 18/75rem 20/75rem;
+            }
+            .iconfont{
+                right: 16/75rem;
+                top: 22/75rem;
+                font-size: 38/75rem;
+            }
+        }
+    }
+    .search-result-success{
+        .search-content{
+            width: 9rem;
+            .result-list{
+                a{
+                    padding-top: 45/75rem;
+                    padding-bottom: 23/75rem;
+                    border-top: 8/75rem solid #F7F7F7;
+                    .content-text{
+                        float: none;
+                        width: 100%;
+                        padding-top: 45/75rem;
+                        font-size: 24/75rem;
+                    }
+                    .total-title{
+                        width: 210/75rem;
+                        float: none;
+                        height: 90/75rem;
+                        line-height: 90/75rem;
+                        padding-left: 12/75rem;
+                        box-shadow: 0 1px 2px 0 #e2e2e2;
+                        .iconfont{
+                            display: none;
+                        }
+                        span{
+                            font-size: 26/75rem;
+                            width: 170/102.4rem;
+                            padding-right: 0;
+                        }
+                        .image{
+                            padding: 0;
+                            width: 38/75rem;
+                            height: 38/75rem;
+                            margin-top: 24/75rem;
+                        }
+                    }
+                }
+                .get-load-more{
+                    width: 240/75rem;
+                    height: 60/75rem;
+                    line-height: 60/75rem;
+                    font-size: 22/75rem;
+                    margin: 70/75rem auto 120/75rem auto;
+                }
+            }
+            .search-text-total{
+                font-size: 24/75rem;
+                padding-top: 30/75rem;
+                padding-bottom: 31/75rem;
+                .iconfont{
+                    font-size: 24/75rem;
+                }
             }
         }
     }
