@@ -196,8 +196,19 @@
 .index-block-dark .list {
   border-bottom: 8px solid #ececec;
 }
-.paper-index-padding {
-  padding-bottom: 130px;
+.paper-index-padding .list {
+  border: none;
+}
+.paper-index-padding .get-load-more {
+  width: 260px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 22px;
+  color: #FFF;
+  background-color: #000;
+  margin: 70px auto 120px auto;
+  cursor: pointer;
 }
 @media screen and (max-width: 1320px) {
   .header-banner .position-absolute-search .search {
@@ -252,8 +263,8 @@
     min-width: 230px;
     margin-right: 120px;
   }
-  .paper-index-padding {
-    padding-bottom: 120px;
+  .paper-index-padding .get-load-more {
+    width: 240px;
   }
 }
 @media screen and (max-width: 1020px) {
@@ -343,8 +354,13 @@
     min-width: 200px;
     margin-right: 20px;
   }
-  .paper-index-padding {
-    padding-bottom: 90px;
+  .paper-index-padding .get-load-more {
+    width: 180px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 16px;
+    color: #FFF;
+    margin: 50px auto 80px auto;
   }
 }
 @media screen and (max-width: 750px) {
@@ -489,7 +505,11 @@
     width: 2.8rem;
     text-align: right;
   }
-  .paper-index-padding {
-    padding-bottom: 1.2rem;
+  .paper-index-padding .get-load-more {
+    width: 3.2rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    font-size: 0.29333333rem;
+    margin: 0.93333333rem auto 1.6rem auto;
   }
 }
