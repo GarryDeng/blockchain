@@ -5,7 +5,7 @@
   padding-top: 97px;
 }
 .position-absolute-search .position-relative {
-  width: 985px;
+  width: 785px;
   margin: 0 auto;
   position: relative;
 }
@@ -14,16 +14,16 @@
   margin: 0 auto;
   border: 1px solid #FFF;
   display: block;
-  line-height: 50px;
-  font-size: 24px;
+  line-height: 30px;
+  font-size: 14px;
   padding: 10px 20px;
   color: #000;
   background-color: #FFF;
 }
 .position-absolute-search .position-relative .iconfont {
   position: absolute;
-  right: -10px;
-  top: 22px;
+  right: -24px;
+  top: 11px;
   font-size: 28px;
   color: #000;
   cursor: pointer;
@@ -39,11 +39,11 @@
   padding-top: 36px;
   padding-bottom: 32px;
   line-height: 1em;
-  font-size: 24px;
+  font-size: 14px;
   color: #000;
 }
 .search-result-success .search-content .iconfont {
-  font-size: 24px;
+  font-size: 14px;
   transform: rotate(-90deg);
   display: inline-block;
   color: #c2c2c2;
@@ -80,7 +80,7 @@
   display: inline-block;
   padding-right: 48px;
   color: #000;
-  font-size: 24px;
+  font-size: 16px;
   width: 170px;
   position: relative;
   white-space: nowrap;
@@ -103,7 +103,7 @@
   width: 913px;
   float: right;
   text-align: justify;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.4em;
   color: #000;
 }
@@ -127,6 +127,7 @@
   }
   .search-result-success .search-content .result-list .get-load-more {
     width: 240px;
+    font-size: 18px;
   }
   .position-absolute-search .position-relative {
     width: 900px;
@@ -156,7 +157,10 @@
     padding: 0 0.25333333rem;
   }
   .search-result-success .search-content .result-list .get-load-more {
-    width: 240px;
+    width: 200px;
+    line-height: 50px;
+    height: 50px;
+    font-size: 16px;
   }
   .position-absolute-search .position-relative {
     width: 9rem;

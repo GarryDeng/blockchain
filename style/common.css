@@ -131,7 +131,7 @@ body {
   user-select: none;
 }
 header {
-  height: 110px;
+  height: 70px;
   position: relative;
 }
 header .common-header {
@@ -141,13 +141,13 @@ header .common-header {
   top: 0;
   width: 100%;
   background-color: #121212;
-  height: 110px;
+  height: 70px;
   transition: all ease-in-out 0.3s;
   overflow: hidden;
   z-index: 9999;
 }
 header .common-header .max-width-menu {
-  line-height: 110px;
+  line-height: 70px;
   max-width: 1280px;
   padding: 0 100px;
   margin: 0 auto;
@@ -158,12 +158,11 @@ header .common-header .max-width-menu .phone-menu-list {
 }
 header .common-header .max-width-menu .logo {
   width: 138px;
-  height: 110px;
+  height: 70px;
   color: #FFF;
 }
 header .common-header .max-width-menu .menu-all {
-  margin-left: 30px;
-  font-size: 22px;
+  font-size: 16px;
   color: #FFF;
   padding-right: 33px;
   position: relative;
@@ -185,12 +184,12 @@ header .common-header .max-width-menu .menu-all.active::before {
   transform: rotate(-180deg);
 }
 header .common-header .max-width-menu .menu-list {
-  width: 876px;
-  padding-top: 28px;
+  width: 730px;
+  padding-top: 8px;
 }
 header .common-header .max-width-menu .menu-list a {
   color: #FFF;
-  font-size: 18px;
+  font-size: 16px;
   display: block;
   margin-right: 35px;
   float: left;
@@ -200,9 +199,6 @@ header .common-header .max-width-menu .menu-list a {
 }
 header .common-header .max-width-menu .menu-list a:hover {
   text-decoration: none;
-}
-header .common-header .max-width-menu .menu-list a:nth-child(7n) {
-  margin-right: 0;
 }
 .common-footer {
   background-color: #000;
@@ -246,50 +242,16 @@ header .common-header .max-width-menu .menu-list a:nth-child(7n) {
   line-height: 1em;
   padding-bottom: 46px;
 }
-@media screen and (max-width: 1480px) {
-  header .common-header .max-width-menu .menu-list {
-    width: 738px;
-  }
-  header .common-header .max-width-menu .menu-list a:nth-child(6n) {
-    margin-right: 0;
-  }
-  header .common-header .max-width-menu .menu-list a:nth-child(7n) {
-    margin-right: 35px;
-  }
-}
 @media screen and (max-width: 1320px) {
-  header {
-    height: 88px;
-  }
-  header .common-header {
-    height: 88px;
-  }
   header .common-header .max-width-menu {
-    line-height: 88px;
     padding: 0 30px;
   }
   header .common-header .max-width-menu .menu-all {
-    font-size: 20px;
     padding-right: 28px;
     margin-left: 12px;
   }
-  header .common-header .max-width-menu .logo {
-    width: 110.4px;
-    height: 88px;
-  }
   header .common-header .max-width-menu .menu-list {
-    width: 650px;
-    padding-top: 20px;
-  }
-  header .common-header .max-width-menu .menu-list a {
-    font-size: 18px;
-    margin-top: 16px;
-  }
-  header .common-header .max-width-menu .menu-list a:nth-child(5n) {
-    margin-right: 0;
-  }
-  header .common-header .max-width-menu .menu-list a:nth-child(7n) {
-    margin-right: 35px;
+    width: 620px;
   }
   .common-footer .content-list {
     width: 980px;
@@ -311,18 +273,10 @@ header .common-header .max-width-menu .menu-list a:nth-child(7n) {
   }
 }
 @media screen and (max-width: 1000px) {
-  header {
-    height: 88px;
-  }
-  header .common-header {
-    height: 88px;
-  }
   header .common-header .max-width-menu {
-    line-height: 88px;
     padding: 0 30px;
   }
   header .common-header .max-width-menu .menu-all {
-    font-size: 16px;
     padding-right: 18px;
     margin-left: 12px;
   }
@@ -334,26 +288,10 @@ header .common-header .max-width-menu .menu-list a:nth-child(7n) {
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
   }
-  header .common-header .max-width-menu .logo {
-    width: 110.4px;
-    height: 88px;
-  }
   header .common-header .max-width-menu .menu-list {
-    width: 440px;
-    padding-top: 20px;
+    width: 400px;
   }
   header .common-header .max-width-menu .menu-list a {
-    font-size: 14px;
-    margin-top: 16px;
-    margin-right: 12px;
-  }
-  header .common-header .max-width-menu .menu-list a:nth-child(5n) {
-    margin-right: 12px;
-  }
-  header .common-header .max-width-menu .menu-list a:nth-child(5) {
-    margin-right: 0;
-  }
-  header .common-header .max-width-menu .menu-list a:nth-child(7n) {
     margin-right: 12px;
   }
   .common-footer .content-list {

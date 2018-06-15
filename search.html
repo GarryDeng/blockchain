@@ -46,10 +46,10 @@
     <script>
         document.getElementsByClassName('menu-all')[0].onclick = function () {
             if (this.className.indexOf('active') != -1) {
-                document.getElementsByClassName('common-header')[0].style.height = 110 + 'px';
+                document.getElementsByClassName('common-header')[0].style.height = 70 + 'px';
                 return this.className = this.className.replace(' active', '');
             }
-            document.getElementsByClassName('common-header')[0].style.height = 165 + 'px';
+            document.getElementsByClassName('common-header')[0].style.height = 'auto';
             this.className += ' active';
         }
     </script>

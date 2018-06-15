@@ -12,12 +12,12 @@
   transform: translate(-50%, -50%);
 }
 .header-banner .position-absolute-search .search {
-  width: 945px;
+  width: 745px;
   margin: 0 auto;
   border: 1px solid #FFF;
   display: block;
-  line-height: 50px;
-  font-size: 24px;
+  line-height: 30px;
+  font-size: 14px;
   padding: 10px 20px;
   color: #FFF;
   background-color: transparent;
@@ -35,13 +35,13 @@
   color: #FFF;
 }
 .header-banner .position-absolute-search .hot-search {
-  padding-top: 25px;
+  padding-top: 15px;
   text-align: center;
 }
 .header-banner .position-absolute-search .hot-search span,
 .header-banner .position-absolute-search .hot-search a {
   color: #FFF;
-  font-size: 16px;
+  font-size: 12px;
   display: inline-block;
   margin: 0 3px;
   line-height: 1em;
@@ -54,8 +54,8 @@
 }
 .header-banner .position-absolute-search .position-relative .iconfont {
   position: absolute;
-  right: 25px;
-  top: 22px;
+  right: 20px;
+  top: 11px;
   font-size: 28px;
   color: #ffffff;
   cursor: pointer;
@@ -77,8 +77,9 @@
   border-bottom: 1px solid #000000;
   width: 1280px;
   margin: 0 auto;
-  font-size: 34px;
+  font-size: 30px;
   color: #000;
+  font-weight: bold;
 }
 .index-block-list .list {
   padding-left: 193px;
@@ -98,7 +99,7 @@
   width: 152px;
   left: 0;
   top: 52px;
-  font-size: 24px;
+  font-size: 20px;
   color: #000;
   line-height: 1em;
 }
@@ -140,7 +141,7 @@
 }
 .index-block-list .list .list-width a span {
   color: #000;
-  font-size: 24px;
+  font-size: 16px;
 }
 .index-block-list .list .list-width a:hover {
   text-decoration: none;
@@ -149,14 +150,14 @@
   box-shadow: 0 0 0 0 transparent;
 }
 .index-block-list .list .list-width a.get-more p {
-  font-size: 24px;
+  font-size: 14px;
   color: #000;
   position: absolute;
   right: 60px;
   bottom: 30px;
 }
 .index-block-list .list .list-width a.get-more p i {
-  font-size: 30px;
+  font-size: 14px;
   display: inline-block;
   vertical-align: middle;
 }
@@ -211,15 +212,6 @@
   cursor: pointer;
 }
 @media screen and (max-width: 1320px) {
-  .header-banner .position-absolute-search .search {
-    width: 780px;
-    font-size: 22px;
-    padding: 6px 12px;
-  }
-  .header-banner .position-absolute-search .position-relative .iconfont {
-    top: 16px;
-    right: 20px;
-  }
   .header-banner .position-absolute-search .hot-search {
     padding-top: 18px;
   }

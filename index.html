@@ -45,9 +45,9 @@
     </header>
     <script>
         document.getElementsByClassName('menu-all')[0].onclick = function (){
-            var scrWidth = document.documentElement.clientWidth > 1320 ? 110 : 88;
+            // var scrWidth = document.documentElement.clientWidth > 1320 ? 110 : 88;
             if(this.className.indexOf('active')!=-1){
-                document.getElementsByClassName('common-header')[0].style.height = scrWidth + 'px';
+                document.getElementsByClassName('common-header')[0].style.height = 70 + 'px';
                 return this.className = this.className.replace(' active','');
             }
             document.getElementsByClassName('common-header')[0].style.height = 'auto';
