@@ -99,7 +99,7 @@
   width: 152px;
   left: 0;
   top: 52px;
-  font-size: 20px;
+  font-size: 18px;
   color: #000;
   line-height: 1em;
 }
@@ -141,7 +141,15 @@
 }
 .index-block-list .list .list-width a span {
   color: #000;
-  font-size: 16px;
+  font-size: 14px;
+  width: 98px;
+  display: block;
+  float: right;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-right: 6px;
 }
 .index-block-list .list .list-width a:hover {
   text-decoration: none;
@@ -181,6 +189,10 @@
 .index-block-gray .list .list-width a {
   margin-right: 56px;
   min-width: 262px;
+}
+.index-block-white .list .list-width a span,
+.index-block-gray .list .list-width a span {
+  width: 190px;
 }
 .index-block-gray {
   background-color: #FFF;
@@ -224,7 +236,6 @@
     padding-left: 150px;
   }
   .index-block-list .list .title-deal {
-    font-size: 20px;
     width: 120px;
   }
   .index-block-list .list .list-width {
@@ -238,9 +249,6 @@
     margin-right: 30px;
     margin-bottom: 30px;
   }
-  .index-block-list .list .list-width a span {
-    font-size: 20px;
-  }
   .index-block-white .list,
   .index-block-gray .list {
     width: 980px;
@@ -248,12 +256,16 @@
   }
   .index-block-white .list .list-width,
   .index-block-gray .list .list-width {
-    width: 1100px;
+    width: 1010px;
   }
   .index-block-white .list .list-width a,
   .index-block-gray .list .list-width a {
-    min-width: 230px;
-    margin-right: 120px;
+    min-width: 209px;
+    margin-right: 28px;
+  }
+  .index-block-white .list .list-width a span,
+  .index-block-gray .list .list-width a span {
+    width: 137px;
   }
   .paper-index-padding .get-load-more {
     width: 240px;
@@ -306,7 +318,7 @@
     width: 590px;
   }
   .index-block-list .list .list-width a {
-    min-width: 92px;
+    min-width: 120px;
     padding-right: 10px;
     line-height: 30px;
     height: 36px;
@@ -316,6 +328,8 @@
   }
   .index-block-list .list .list-width a span {
     font-size: 12px;
+    width: 78px;
+    line-height: 36px;
   }
   .index-block-list .list .list-width a img {
     width: 18px;
@@ -345,6 +359,10 @@
   .index-block-gray .list .list-width a {
     min-width: 200px;
     margin-right: 20px;
+  }
+  .index-block-white .list .list-width a span,
+  .index-block-gray .list .list-width a span {
+    width: 128px;
   }
   .paper-index-padding .get-load-more {
     width: 180px;
@@ -441,12 +459,6 @@
   }
   .index-block-list .list .list-width a span {
     width: 1.57333333rem;
-    display: block;
-    float: right;
-    position: relative;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
     font-size: 0.34666667rem;
     margin-right: 0.25333333rem;
   }
