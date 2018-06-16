@@ -20,7 +20,7 @@
   font-size: 14px;
   padding: 10px 20px;
   color: #FFF;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .header-banner .position-absolute-search .search:input-placeholder {
   color: #FFF;

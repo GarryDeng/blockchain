@@ -162,7 +162,7 @@ header .common-header .max-width-menu .logo {
   color: #FFF;
 }
 header .common-header .max-width-menu .menu-all {
-  font-size: 16px;
+  font-size: 14px;
   color: #FFF;
   padding-right: 33px;
   position: relative;
@@ -184,12 +184,12 @@ header .common-header .max-width-menu .menu-all.active::before {
   transform: rotate(-180deg);
 }
 header .common-header .max-width-menu .menu-list {
-  width: 730px;
-  padding-top: 8px;
+  width: 654px;
+  padding-top: 10px;
 }
 header .common-header .max-width-menu .menu-list a {
   color: #FFF;
-  font-size: 16px;
+  font-size: 14px;
   display: block;
   margin-right: 35px;
   float: left;
@@ -251,7 +251,7 @@ header .common-header .max-width-menu .menu-list a:hover {
     margin-left: 12px;
   }
   header .common-header .max-width-menu .menu-list {
-    width: 620px;
+    width: 560px;
   }
   .common-footer .content-list {
     width: 980px;
@@ -289,7 +289,7 @@ header .common-header .max-width-menu .menu-list a:hover {
     border-right: 5px solid transparent;
   }
   header .common-header .max-width-menu .menu-list {
-    width: 400px;
+    width: 450px;
   }
   header .common-header .max-width-menu .menu-list a {
     margin-right: 12px;
