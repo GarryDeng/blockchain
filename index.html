@@ -7,6 +7,7 @@
     <title>首页</title>
     <link rel="stylesheet" href="style/common.css">
     <link rel="stylesheet" href="style/index.css">
+    <script src="js/jquery-1.7.2.min.js"></script>
     <script src="js/rem.js"></script>
 </head>
 <body>
@@ -14,34 +15,39 @@
         <div class="common-header">
             <div class="max-width-menu clear">
                 <div class="fl logo">LOGO</div>
-                <div class="fr phone-menu-list">
+                <!-- <div class="fr phone-menu-list">
                     <a href="">交易所</a>
                     <a href="">信息网</a>
                     <a href="">落地项目</a>
                     <a href="">钱包</a>
                     <a href="">游戏</a>
-                </div>
+                </div> -->
+                <div class="fr phone-line-three"><img src="images/line.png" alt=""></div>
                 <div class="fr menu-all">全部分类</div>
                 <div class="fr menu-list">
+                    <p class="phone-all-list">全部分类</p>
                     <div class="clear">
-                        <a href="">区块链交易所</a>
-                        <a href="">区块链信息网</a>
+                        <a class="active" href="">区块链交易</a>
+                        <a href="">区块链信息</a>
                         <a href="">落地项目</a>
-                        <a href="">数字货币钱包</a>
+                        <a href="">数字货币</a>
                         <a href="">区块链游戏</a>
                         <a href="">挖矿设备</a>
-                        <a href="./paper.html">白皮书之家</a>
-                        <a href="">区块链交易所</a>
-                        <a href="">区块链信息网</a>
+                        <a href="">白皮书之家</a>
+                        <a href="">区块链交易</a>
+                        <a href="">区块链信息</a>
                         <a href="">落地项目</a>
-                        <a href="">数字货币钱包</a>
+                        <a href="">数字货币</a>
                         <a href="">区块链游戏</a>
+                        <a href="">挖矿设备</a>
+                        <a href="">白皮书之家</a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
     <script>
+        // PC端隐藏
         document.getElementsByClassName('menu-all')[0].onclick = function (){
             // var scrWidth = document.documentElement.clientWidth > 1320 ? 110 : 88;
             if(this.className.indexOf('active')!=-1){
@@ -51,6 +57,14 @@
             document.getElementsByClassName('common-header')[0].style.height = 'auto';
             this.className += ' active';
         }
+        // 手机端隐藏
+        $(".max-width-menu .menu-list").on('click',function(ev){
+            if($(ev.target).parents().length === 5) $(this).fadeOut();
+        });
+        //手机端导航条线索
+        $('.phone-line-three').on('click',function(){
+            $(".max-width-menu .menu-list").fadeToggle();
+        });
     </script>
     <div class="header-banner">
         <img class="bg" src="images/banner.jpg" alt="火星">
@@ -123,10 +137,6 @@
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>PreAngle</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
                     <span>Bbox</span>
                 </a>
                 <a href="">
@@ -136,24 +146,9 @@
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
                     <span>Binance</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Bbox</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Liqui</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Binance</span>
-                </a>
-                <a class="get-more" href="javascript:">
-                    <p>更多 <i class="iconfont">&#xe649;</i></p>
                 </a>
             </div>
-            <i class="arrow"></i>
+            <i class="arrow">更多<i class="iconfont">&#xe649;</i></i>
         </div>
         <div class="list">
             <span class="title-deal">场外交易
@@ -182,11 +177,7 @@
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Liqui</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Binance</span>
+                    <span>BITIG比特爱鸽</span>
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
@@ -198,11 +189,7 @@
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Liqui</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Binance</span>
+                    <span>BITIG比特爱鸽</span>
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
@@ -214,20 +201,12 @@
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Liqui</span>
+                    <span>BITIG比特爱鸽</span>
                 </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Binance</span>
-                </a>
-                <a class="get-more" href="javascript:">
-                    <p>更多
-                        <i class="iconfont">&#xe649;</i>
-                    </p>
-                </a>
-                
             </div>
-            <i class="arrow"></i>
+            <i class="arrow">更多
+                <i class="iconfont">&#xe649;</i>
+            </i>
         </div>
         <div class="list">
             <span class="title-deal">杠杆交易
@@ -248,15 +227,7 @@
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Bbox</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Liqui</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Binance</span>
+                    <span>BITIG比特爱鸽</span>
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
@@ -264,24 +235,36 @@
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Bbox</span>
+                    <span>BITIG比特爱鸽</span>
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Liqui</span>
+                    <span>PreAngle</span>
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Binance</span>
+                    <span>BITIG比特爱鸽</span>
                 </a>
-                <a class="get-more" href="javascript:">
-                    <p>更多
-                        <i class="iconfont">&#xe649;</i>
-                    </p>
+                <a href="">
+                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
+                    <span>PreAngle</span>
                 </a>
-                
+                <a href="">
+                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
+                    <span>BITIG比特爱鸽</span>
+                </a>
+                <a href="">
+                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
+                    <span>PreAngle</span>
+                </a>
+                <a href="">
+                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
+                    <span>BITIG比特爱鸽</span>
+                </a>
             </div>
-            <i class="arrow"></i>
+            <i class="arrow">更多
+                <i class="iconfont">&#xe649;</i>
+            </i>
         </div>
         <div class="list">
             <span class="title-deal">现货交易
@@ -302,15 +285,7 @@
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Bbox</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Liqui</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Binance</span>
+                    <span>BITIG比特爱鸽</span>
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
@@ -318,24 +293,36 @@
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Bbox</span>
+                    <span>BITIG比特爱鸽</span>
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Liqui</span>
+                    <span>PreAngle</span>
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Binance</span>
+                    <span>BITIG比特爱鸽</span>
                 </a>
-                <a class="get-more" href="javascript:">
-                    <p>更多
-                        <i class="iconfont">&#xe649;</i>
-                    </p>
+                <a href="">
+                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
+                    <span>PreAngle</span>
                 </a>
-                
+                <a href="">
+                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
+                    <span>BITIG比特爱鸽</span>
+                </a>
+                <a href="">
+                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
+                    <span>PreAngle</span>
+                </a>
+                <a href="">
+                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
+                    <span>BITIG比特爱鸽</span>
+                </a>
             </div>
-            <i class="arrow"></i>
+            <i class="arrow">更多
+                <i class="iconfont">&#xe649;</i>
+            </i>
         </div>
         <div class="list">
             <span class="title-deal">期货交易
@@ -356,15 +343,7 @@
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Bbox</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Liqui</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Binance</span>
+                    <span>BITIG比特爱鸽</span>
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
@@ -372,15 +351,7 @@
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Bbox</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Liqui</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Binance</span>
+                    <span>BITIG比特爱鸽</span>
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
@@ -388,15 +359,7 @@
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Bbox</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Liqui</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Binance</span>
+                    <span>BITIG比特爱鸽</span>
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
@@ -404,24 +367,20 @@
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Bbox</span>
+                    <span>BITIG比特爱鸽</span>
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Liqui</span>
+                    <span>PreAngle</span>
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Binance</span>
+                    <span>BITIG比特爱鸽</span>
                 </a>
-                <a class="get-more" href="javascript:">
-                    <p>更多
-                        <i class="iconfont">&#xe649;</i>
-                    </p>
-                </a>
-                
             </div>
-            <i class="arrow"></i>
+            <i class="arrow">更多
+                <i class="iconfont">&#xe649;</i>
+            </i>
         </div>
     </div>
     <div class="index-block-list index-block-white">
@@ -444,7 +403,7 @@
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>BITIG</span>
+                    <span>BITI</span>
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
@@ -452,7 +411,7 @@
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>特爱鸽</span>
+                    <span>BITI</span>
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
@@ -460,7 +419,7 @@
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>BITIG比特爱鸽</span>
+                    <span>BITI</span>
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
@@ -468,15 +427,7 @@
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Bbox</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Liqui</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Binance</span>
+                    <span>BITI</span>
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
@@ -484,66 +435,12 @@
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Bbox</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Liqui</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Binance</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>PreAngle</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Bbox</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Liqui</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Binance</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>PreAngle</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Bbox</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Liqui</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Binance</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>PreAngle</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Bbox</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Liqui</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Binance</span>
+                    <span>BITI</span>
                 </a>
             </div>
-            <i class="arrow"></i>
+            <i class="arrow">更多
+                <i class="iconfont">&#xe649;</i>
+            </i>
         </div>
     </div>
     <div class="index-block-list index-block-gray">
@@ -558,7 +455,27 @@
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>BITIG比特爱鸽</span>
+                    <span>PreAngle</span>
+                </a>
+                <a href="">
+                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
+                    <span>PreAngle</span>
+                </a>
+                <a href="">
+                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
+                    <span>PreAngle</span>
+                </a>
+                <a href="">
+                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
+                    <span>PreAngle</span>
+                </a>
+                <a href="">
+                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
+                    <span>PreAngle</span>
+                </a>
+                <a href="">
+                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
+                    <span>PreAngle</span>
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
@@ -590,63 +507,13 @@
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Bbox</span>
+                    <span>BITIG比特爱鸽</span>
                 </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Liqui</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Binance</span>
-                </a><a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>PreAngle</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Bbox</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Liqui</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Binance</span>
-                </a><a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>PreAngle</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Bbox</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Liqui</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Binance</span>
-                </a><a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>PreAngle</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Bbox</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Liqui</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Binance</span>
-                </a>
+                
             </div>
-            <i class="arrow"></i>
+            <i class="arrow">更多
+                <i class="iconfont">&#xe649;</i>
+            </i>
         </div>
     </div>
     <div class="index-block-list index-block-white">
@@ -661,7 +528,23 @@
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>BITIG比特爱鸽</span>
+                    <span>PreAngle</span>
+                </a>
+                <a href="">
+                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
+                    <span>PreAngle</span>
+                </a>
+                <a href="">
+                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
+                    <span>PreAngle</span>
+                </a>
+                <a href="">
+                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
+                    <span>PreAngle</span>
+                </a>
+                <a href="">
+                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
+                    <span>PreAngle</span>
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
@@ -686,100 +569,11 @@
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
                     <span>BITIG比特爱鸽</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>PreAngle</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Bbox</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Liqui</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Binance</span>
-                </a><a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>PreAngle</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Bbox</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Liqui</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Binance</span>
-                </a><a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>PreAngle</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Bbox</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Liqui</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Binance</span>
-                </a><a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>PreAngle</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Bbox</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Liqui</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Binance</span>
-                </a><a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>PreAngle</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Bbox</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Liqui</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Binance</span>
-                </a><a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>PreAngle</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Bbox</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Liqui</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Binance</span>
                 </a>
             </div>
-            <i class="arrow"></i>
+            <i class="arrow">更多
+                <i class="iconfont">&#xe649;</i>
+            </i>
         </div>
     </div>
     <div class="index-block-list index-block-gray">
@@ -794,7 +588,31 @@
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>BITIG比特爱鸽</span>
+                    <span>PreAngle</span>
+                </a>
+                <a href="">
+                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
+                    <span>PreAngle</span>
+                </a>
+                <a href="">
+                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
+                    <span>PreAngle</span>
+                </a>
+                <a href="">
+                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
+                    <span>PreAngle</span>
+                </a>
+                <a href="">
+                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
+                    <span>PreAngle</span>
+                </a>
+                <a href="">
+                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
+                    <span>PreAngle</span>
+                </a>
+                <a href="">
+                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
+                    <span>PreAngle</span>
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
@@ -811,123 +629,11 @@
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
                     <span>BITIG比特爱鸽</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>PreAngle</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>BITIG比特爱鸽</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>PreAngle</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Bbox</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Liqui</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Binance</span>
-                </a><a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>PreAngle</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Bbox</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Liqui</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Binance</span>
-                </a><a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>PreAngle</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Bbox</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Liqui</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Binance</span>
-                </a><a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>PreAngle</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Bbox</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Liqui</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Binance</span>
-                </a><a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>PreAngle</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Bbox</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Liqui</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Binance</span>
-                </a><a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>PreAngle</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Bbox</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Liqui</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Binance</span>
-                </a><a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>PreAngle</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Bbox</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Liqui</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Binance</span>
                 </a>
             </div>
-            <i class="arrow"></i>
+            <i class="arrow">更多
+                <i class="iconfont">&#xe649;</i>
+            </i>
         </div>
     </div>
     <div class="index-block-list index-block-dark">
@@ -945,7 +651,7 @@
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>BITIG比特爱鸽</span>
+                    <span>PreAngle</span>
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
@@ -953,7 +659,7 @@
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>BITIG比特爱鸽</span>
+                    <span>PreAngle</span>
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
@@ -961,7 +667,7 @@
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>BITIG比特爱鸽</span>
+                    <span>PreAngle</span>
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
@@ -969,15 +675,7 @@
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Bbox</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Liqui</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Binance</span>
+                    <span>PreAngle</span>
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
@@ -985,78 +683,20 @@
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Bbox</span>
+                    <span>PreAngle</span>
                 </a>
                 <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Liqui</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Binance</span>
-                </a><a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
                     <span>PreAngle</span>
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Bbox</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Liqui</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Binance</span>
-                </a><a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
                     <span>PreAngle</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Bbox</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Liqui</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Binance</span>
-                </a><a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>PreAngle</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Bbox</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Liqui</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Binance</span>
-                </a><a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>PreAngle</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Bbox</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Liqui</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Binance</span>
                 </a>
             </div>
-            <i class="arrow"></i>
+            <i class="arrow">更多
+                <i class="iconfont">&#xe649;</i>
+            </i>
         </div>
         <div class="list">
             <span class="title-deal">矿区
@@ -1069,123 +709,52 @@
                 </a>
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
+                    <span>PreAngle</span>
+                </a>
+                <a href="">
+                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
+                    <span>PreAngle</span>
+                </a>
+                <a href="">
+                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
+                    <span>PreAngle</span>
+                </a>
+                <a href="">
+                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
+                    <span>PreAngle</span>
+                </a>
+                <a href="">
+                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
+                    <span>PreAngle</span>
+                </a>
+                <a href="">
+                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
+                    <span>PreAngle</span>
+                </a>
+                <a href="">
+                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
+                    <span>PreAngle</span>
+                </a>
+                <a href="">
+                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
+                    <span>PreAngle</span>
+                </a>
+                <a href="">
+                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
+                    <span>PreAngle</span>
+                </a>
+                <a href="">
+                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
+                    <span>PreAngle</span>
+                </a>
+                <a href="">
+                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
                     <span>BITIG比特爱鸽</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>BITIG比特爱鸽</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>BITIG比特爱鸽</span>
-                </a><a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>PreAngle</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Bbox</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Liqui</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Binance</span>
-                </a><a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>PreAngle</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Bbox</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Liqui</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Binance</span>
-                </a><a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>PreAngle</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Bbox</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Liqui</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Binance</span>
-                </a><a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>PreAngle</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Bbox</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Liqui</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Binance</span>
-                </a><a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>PreAngle</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Bbox</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Liqui</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Binance</span>
-                </a><a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>PreAngle</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Bbox</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Liqui</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Binance</span>
-                </a><a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>PreAngle</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Bbox</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Liqui</span>
-                </a>
-                <a href="">
-                    <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
-                    <span>Binance</span>
                 </a>
             </div>
-            <i class="arrow"></i>
+            <i class="arrow">更多
+                <i class="iconfont">&#xe649;</i>
+            </i>
         </div>
     </div>
     <footer>

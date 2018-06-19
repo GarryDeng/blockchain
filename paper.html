@@ -8,6 +8,7 @@
     <title>白皮书之家</title>
     <link rel="stylesheet" href="style/common.css">
     <link rel="stylesheet" href="style/index.css">
+    <script src="js/jquery-1.7.2.min.js"></script>
     <script src="js/rem.js"></script>
 </head>
 
@@ -16,27 +17,31 @@
         <div class="common-header">
             <div class="max-width-menu clear">
                 <div class="fl logo" onclick="location.href='./'">LOGO</div>
-                <div class="fr phone-menu-list">
+                <!-- <div class="fr phone-menu-list">
                     <a href="">交易所</a>
                     <a href="">信息网</a>
                     <a href="">落地项目</a>
                     <a href="">钱包</a>
                     <a href="">游戏</a>
+                </div> -->
+                <div class="fr phone-line-three">
+                    <img src="images/line.png" alt="">
                 </div>
                 <div class="fr menu-all">全部分类</div>
                 <div class="fr menu-list">
+                    <p class="phone-all-list">全部分类</p>
                     <div class="clear">
-                        <a href="">区块链交易所</a>
-                        <a href="">区块链信息网</a>
+                        <a class="active" href="">区块链交易</a>
+                        <a href="">区块链信息</a>
                         <a href="">落地项目</a>
-                        <a href="">数字货币钱包</a>
+                        <a href="">数字货币</a>
                         <a href="">区块链游戏</a>
                         <a href="">挖矿设备</a>
                         <a href="">白皮书之家</a>
-                        <a href="">区块链交易所</a>
-                        <a href="">区块链信息网</a>
+                        <a href="">区块链交易</a>
+                        <a href="">区块链信息</a>
                         <a href="">落地项目</a>
-                        <a href="">数字货币钱包</a>
+                        <a href="">数字货币</a>
                         <a href="">区块链游戏</a>
                         <a href="">挖矿设备</a>
                         <a href="">白皮书之家</a>
@@ -55,6 +60,14 @@
             document.getElementsByClassName('common-header')[0].style.height = 'auto';
             this.className += ' active';
         }
+         // 手机端隐藏
+            $(".max-width-menu .menu-list").on('click', function (ev) {
+                if ($(ev.target).parents().length === 5) $(this).fadeOut();
+            });
+            //手机端导航条线索
+            $('.phone-line-three').on('click', function () {
+                $(".max-width-menu .menu-list").fadeToggle();
+            });
     </script>
     <div class="header-banner">
         <img class="bg" src="images/banner.jpg" alt="火星">

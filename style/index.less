@@ -6,7 +6,7 @@
     }
     .position-absolute-search{
         position: absolute;
-        top: 50%;
+        top: 42%;
         left: 50%;
         transform: translate(-50%,-50%);
         .search{
@@ -151,20 +151,20 @@
                 &:hover{
                     text-decoration: none;
                 }
-                &.get-more{
-                    box-shadow:  0 0 0 0 transparent;
-                    p{
-                        font-size: 14px;
-                        color: #000;
-                        position: absolute;
-                        right: 60px;
-                        bottom: 30px;
-                        i{
-                            font-size: 14px;
-                            display: inline-block;
-                            vertical-align: middle;
-                        }
-                    }
+                // &.get-more{
+                //     box-shadow:  0 0 0 0 transparent;
+                //     p{
+                //         font-size: 14px;
+                //         color: #000;
+                //         position: absolute;
+                //         right: 60px;
+                //         bottom: 30px;
+                //         i{
+                //             font-size: 14px;
+                //             display: inline-block;
+                //             vertical-align: middle;
+                //         }
+                //     }
                     //  &.get-more p {
                     //     font-size: 14px;
                     //     right: 30px;
@@ -177,10 +177,20 @@
             }
         }
         .arrow{
-            display: none;
+            display: block;
+            float: right;
+            font-style: normal;
+            font-size: 14px;
+            position: absolute;
+            right: 0;
+            bottom: 22px;
+            cursor: pointer;
+            i{
+                font-size: 14px;
+            }
         }
     }
-}
+// }
 .index-block-white,.index-block-gray{
     background-color: #F7F7F7;
     .list{
@@ -316,6 +326,10 @@
         }
     }
     .index-block-list{
+        .arrow{
+            bottom: 10px;
+            right: 3px;
+        }
         .title{
             width: 680px;
             font-size: 22px;
@@ -326,7 +340,7 @@
             width: 680-120px;
             padding-left: 120px;
             padding-top: 32px;
-            padding-bottom: 16px;
+            padding-bottom: 26px;
             .title-deal{
                 font-size: 14px;
                 width: 100px;
@@ -361,14 +375,14 @@
                         // vertical-align: middle;
                         margin-top: 0;
                     }
-                    &.get-more p {
-                        font-size: 14px;
-                        right: 30px;
-                        bottom: 12px;
-                        i{
-                            font-size: 14px;
-                        }
-                    }
+                    // &.get-more p {
+                    //     font-size: 14px;
+                    //     right: 30px;
+                    //     bottom: 12px;
+                    //     i{
+                    //         font-size: 14px;
+                    //     }
+                    // }
                 }
             }
         }
@@ -443,14 +457,34 @@
         .title{
             width: 675/75rem;
             font-size: 44/75rem;
-            padding-top: 45/75rem;
+            padding-top: 40/75rem;
             padding-bottom: 45/75rem;
+            border: none;
+            position: relative;
+            &::after{
+                position: absolute;
+                content: "";
+                left: -.6rem;
+                right: -.6rem;
+                border-bottom: 8/75rem solid #ebebeb;
+                bottom: 0;
+            }
         }
         .list {
             width: 675/75rem;
             padding-left: 0;
             padding-top: 0;
             padding-bottom: 80/75rem;
+            border: none;
+            &::after{
+                content: "";
+                left: 0;
+                right: 0;
+                border-bottom: 1px solid #d9d9d9;
+                position: absolute;
+                bottom: 0;
+                transform: scaleY(.3333333);
+            }
             .title-deal{
                 display: block;
                 position: relative;
@@ -459,7 +493,18 @@
                 color:#000000;
                 padding-top: 35/75rem;
                 padding-bottom: 5/75rem;
-                opacity: .5;
+                // opacity: .5;
+                text-indent: .39rem;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: .6rem;
+                    width: 12/75rem;
+                    height: 12/75rem;
+                    background-color: #000;
+                    border-radius: 50%;
+                }
                 .iconfont{
                     display: none;
                 }
@@ -468,6 +513,7 @@
                 width: (675+30)/75rem;
                 a{
                     width: 210/75rem;
+                    min-width: 210/75rem;
                     height: 90/75rem;
                     line-height: 90/75rem;
                     margin-top: 30/75rem;
@@ -485,6 +531,7 @@
                     }
                     span{
                         width: 118/75rem;
+                        line-height: 90/75rem;
                         // display: block;
                         // float: right;
                         // position: relative;
@@ -494,54 +541,40 @@
                         font-size: 26/75rem;
                         margin-right: 19/75rem;
                     }
-                    &.get-more{
-                        display: none;
-                    }
+                    // &.get-more{
+                    //     display: none;
+                    // }
                 }
             }
-            .arrow{
-                position: absolute;
-                right: 0;
-                bottom: 18/75rem;
-                width: 40/75rem;
-                height: 40/75rem;
-                display: block;
-                &::before{
-                    content: "";
-                    border-top: 8px solid #999;
-                    border-right: 6px solid transparent;
-                    border-left: 6px solid transparent;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    margin-left: -3px;
-                    margin-top: -4px;
-                }
-            }
+            // .arrow{
+            //     position: absolute;
+            //     right: 0;
+            //     bottom: 18/75rem;
+            //     width: 40/75rem;
+            //     height: 40/75rem;
+            //     display: block;
+            //     &::before{
+            //         content: "";
+            //         border-top: 8px solid #999;
+            //         border-right: 6px solid transparent;
+            //         border-left: 6px solid transparent;
+            //         position: absolute;
+            //         top: 50%;
+            //         left: 50%;
+            //         margin-left: -3px;
+            //         margin-top: -4px;
+            //     }
+            // }
         }
         &.index-block-dark{
             padding-bottom: 90/75rem;
         }
     }
     .index-block-dark .list{
-        border-bottom: 8/75rem solid #ececec;
+        border: none;
     }
-    .index-block-white,.index-block-gray{
-        .list .list-width{
-            width: 9.6rem;
-            a{
-                width: 4.2rem;
-                min-width: 4.2rem;
-                margin-right: .53rem;
-                img{
-                    width: 40/75rem;
-                }
-                span{
-                    width: 2.8rem;
-                    text-align: right;
-                }
-            }
-        }
+    .index-block-white,.index-block-gray,.index-block-dark{
+        background-color: #FFF;
     }
     .paper-index-padding{
         .get-load-more{
