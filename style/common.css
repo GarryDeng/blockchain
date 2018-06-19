@@ -369,6 +369,7 @@ header .common-header .max-width-menu .menu-list a:hover {
     position: relative;
     font-size: 0.34666667rem;
     text-indent: .7rem;
+    display: block;
   }
   header .common-header .max-width-menu .menu-list .phone-all-list::after {
     content: "";
