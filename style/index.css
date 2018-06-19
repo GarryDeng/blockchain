@@ -403,6 +403,14 @@
     font-size: 0.26666667rem;
     margin: 0 2px;
   }
+  .index-block-list .arrow {
+    opacity: .4;
+    font-size: 0.26666667rem;
+    bottom: 0.4rem;
+  }
+  .index-block-list .arrow i {
+    font-size: 0.26666667rem;
+  }
   .index-block-list .title {
     width: 9rem;
     font-size: 0.58666667rem;
