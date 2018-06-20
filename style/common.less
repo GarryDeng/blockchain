@@ -113,7 +113,7 @@ header{
         .max-width-menu{
             line-height: 70px;
             max-width: 1280px;
-            padding: 0 100px;
+            // padding: 0 100px;
             margin: 0 auto;
             position: relative;
             .phone-all-list,.phone-line-three{
@@ -193,7 +193,7 @@ header{
     width: 1280px;
     position: relative;
     overflow: hidden;
-    padding-top: 95px;
+    padding-top: 55px;
     margin: 0 auto;
     .footer-code-head{
       position: relative;
@@ -210,30 +210,59 @@ header{
       .head-src{
         text-align: center;
         padding-top: 60px;
-        padding-bottom: 106px;
+        padding-bottom: 90px;
         a{
-          font-size: 16px;
+          font-size: 14px;
           color: #FFF;
           display: inline-block;
           width: 96px;
           margin-left: 44px;
+          opacity: .6;
           // text-align: justify;
           &:hover{
             text-decoration: none;
           }
         }
       }
+      .watch{
+        position: absolute;
+        right: 0;
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        top: 50%;
+        margin-top: -46px;
+        img{
+          width: 100%;
+          display: block;
+          &.hover-code{
+            display: none;
+          }
+        }
+        &:hover{
+          img.hover-code{
+            display: block;
+            position: absolute;
+            top: 60px;
+            // margin-top: -120px;
+            width: 120px;
+            height: 120px;
+            right: 0;
+          }
+        }
+      }
     }
     .link-src{
-      padding-top: 60px;
+      padding-top: 30px;
       position: relative;
       .hint{
         position: absolute;
         left: 0;
-        top: 60px;
+        top: 30px;
         font-size: 16px;
         color: #FFF;
         line-height: 1.6em;
+        opacity: .6;
       }
       .list{
         padding-left: 135px;
@@ -245,6 +274,7 @@ header{
           margin-left: 15px;
           margin-bottom: 18px;
           line-height: 1em;
+          opacity: .6;
           &:hover{
             text-decoration: none;
           }
@@ -281,6 +311,7 @@ header{
       text-align: center;
       line-height: 1em;
       padding-bottom: 46px;
+      opacity: .6;
     }
   }
 }
@@ -291,7 +322,8 @@ header{
       // height: 88px;
       .max-width-menu{
         // line-height: 88px;
-        padding: 0 30px;
+        // padding: 0 30px;
+        width: 980px;
         .menu-all{
           // font-size: 20px;
           padding-right: 28px;
@@ -337,10 +369,11 @@ header{
       padding-top: 15px;
       position: relative;
       left: -30px;
-      padding-bottom: 76px;
+      padding-bottom: 36px;
       a{
         margin-left: 73px;
         margin-bottom: 26px;
+        text-align: right;
       }
     }
     .copy-right{
@@ -428,15 +461,15 @@ header{
     box-sizing: border-box;
   }
   header{
-    height: 88/75rem;
+    height: 100/75rem;
     .common-header{
-      line-height: 88/75rem;
-      height: 88/75rem;
+      line-height: 100/75rem;
+      height: 100/75rem;
       width: 10rem;
       overflow: visible;
       .max-width-menu{
-        line-height: 88/75rem;
-        height: 88/75rem;
+        line-height: 100/75rem;
+        height: 100/75rem;
         padding: 0 .3rem;
         width: 10rem;
         background-color: #FFF;
@@ -444,7 +477,7 @@ header{
           display: block;
           width: 39/75rem;
           height: 25/75rem;
-          margin-top: (76 - 25)/2/75rem; 
+          margin-top: (88 - 25)/2/75rem; 
           margin-right: .15rem;
           line-height: 1em;
           img{
@@ -453,17 +486,18 @@ header{
         }
         .logo {
             width: 95/75rem;
-            height: 88/75rem;
+            height:100/75rem;
             color: #000;
             position: absolute;
             left: 50%;
-            margin-left: -95/1.5/2/75rem;
+            margin-left: -95/2/2/75rem;
             img{
               display: none;
               &.phone{
                 display: block;
-                height: 1rem;
-                padding-top: (88-75)/1.2/75rem;
+                height: .7rem;
+                padding: 0;
+                margin-top: (100/75-0.7)/2rem;
               }
             }
         }
@@ -475,7 +509,7 @@ header{
           position: fixed;
           left: 0;
           right: 0;
-          top: 88/75rem;
+          top: 100/75rem;
           height: 100%;
           bottom: 0;
           background: rgba(0,0,0,.3);
@@ -561,6 +595,9 @@ header{
         width: 120/75rem;
         left: 15/75rem;
       }
+      .watch{
+        display: none;
+      }
       &::after{
         content: '';
         clear: both;
@@ -574,6 +611,7 @@ header{
         float: right;
         left: 0;
         padding-bottom: 30/75rem;
+        line-height: 1em;
         a{
           margin-left: 86/75rem;
           width: 100/75rem;
@@ -594,6 +632,7 @@ header{
       .list{
         padding-left: 130/75rem;
         padding-bottom: 30/75rem;
+        line-height: 1em;
         a{
           font-size: 14/75rem;
           margin-left: 12/75rem;
