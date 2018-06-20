@@ -162,6 +162,15 @@ header .common-header .max-width-menu .logo {
   height: 70px;
   color: #FFF;
 }
+header .common-header .max-width-menu .logo img {
+  height: 50px;
+  padding-top: 10px;
+  width: auto;
+  display: block;
+}
+header .common-header .max-width-menu .logo img.phone {
+  display: none;
+}
 header .common-header .max-width-menu .menu-all {
   font-size: 14px;
   color: #FFF;
@@ -212,32 +221,62 @@ header .common-header .max-width-menu .menu-list a:hover {
   padding-top: 95px;
   margin: 0 auto;
 }
-.common-footer .content-list .e-mail-icon {
+.common-footer .content-list .footer-code-head {
   position: relative;
-  width: 972px;
-  margin: 0 auto;
+  border-bottom: 2px solid #4a4a4a;
 }
-.common-footer .content-list .e-mail-icon .e-mail {
-  width: 100%;
-  display: block;
-  border: 1px solid #FFF;
-  padding: 10px 20px;
-  line-height: 56px;
-  background-color: transparent;
-  color: #FFF;
-}
-.common-footer .content-list .e-mail-icon .iconfont {
+.common-footer .content-list .footer-code-head .code {
   position: absolute;
-  right: -4px;
-  top: 22px;
-  color: #FFF;
-  font-size: 34px;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 120px;
+  height: auto;
 }
-.common-footer .content-list .href-list {
-  height: 328px;
+.common-footer .content-list .footer-code-head .head-src {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 106px;
+}
+.common-footer .content-list .footer-code-head .head-src a {
+  font-size: 16px;
+  color: #FFF;
+  display: inline-block;
+  width: 96px;
+  margin-left: 44px;
+}
+.common-footer .content-list .footer-code-head .head-src a:hover {
+  text-decoration: none;
+}
+.common-footer .content-list .link-src {
+  padding-top: 60px;
+  position: relative;
+}
+.common-footer .content-list .link-src .hint {
+  position: absolute;
+  left: 0;
+  top: 60px;
+  font-size: 16px;
+  color: #FFF;
+  line-height: 1.6em;
+}
+.common-footer .content-list .link-src .list {
+  padding-left: 135px;
+  padding-bottom: 30px;
+}
+.common-footer .content-list .link-src .list a {
+  display: inline-block;
+  color: #FFF;
+  font-size: 14px;
+  margin-left: 15px;
+  margin-bottom: 18px;
+  line-height: 1em;
+}
+.common-footer .content-list .link-src .list a:hover {
+  text-decoration: none;
 }
 .common-footer .content-list .copy-right {
-  font-size: 24px;
+  font-size: 12px;
   color: #FFF;
   text-align: center;
   line-height: 1em;
@@ -268,8 +307,19 @@ header .common-header .max-width-menu .menu-list a:hover {
     right: 10px;
     top: 14px;
   }
+  .common-footer .content-list .footer-code-head .head-src {
+    width: 524px;
+    margin: 0 auto;
+    padding-top: 15px;
+    position: relative;
+    left: -30px;
+    padding-bottom: 76px;
+  }
+  .common-footer .content-list .footer-code-head .head-src a {
+    margin-left: 73px;
+    margin-bottom: 26px;
+  }
   .common-footer .content-list .copy-right {
-    font-size: 18px;
     padding-bottom: 20px;
   }
 }
@@ -309,8 +359,16 @@ header .common-header .max-width-menu .menu-list a:hover {
     right: 10px;
     top: 9px;
   }
+  .common-footer .content-list .footer-code-head .head-src {
+    width: 434px;
+    padding-top: 0px;
+    left: -18px;
+    padding-bottom: 36px;
+  }
+  .common-footer .content-list .footer-code-head .head-src a {
+    margin-left: 36px;
+  }
   .common-footer .content-list .copy-right {
-    font-size: 14px;
     padding-bottom: 20px;
   }
 }
@@ -325,6 +383,7 @@ header .common-header .max-width-menu .menu-list a:hover {
     line-height: 1.17333333rem;
     height: 1.17333333rem;
     width: 10rem;
+    overflow: visible;
   }
   header .common-header .max-width-menu {
     line-height: 1.17333333rem;
@@ -338,16 +397,27 @@ header .common-header .max-width-menu .menu-list a:hover {
     width: 0.52rem;
     height: 0.33333333rem;
     margin-top: 0.34rem;
-    margin-right: .3rem;
+    margin-right: .15rem;
     line-height: 1em;
   }
+  header .common-header .max-width-menu .phone-line-three img {
+    width: 100%;
+  }
   header .common-header .max-width-menu .logo {
-    width: 1.472rem;
+    width: 1.26666667rem;
     height: 1.17333333rem;
     color: #000;
     position: absolute;
     left: 50%;
-    margin-left: -0.73333333rem;
+    margin-left: -0.42222222rem;
+  }
+  header .common-header .max-width-menu .logo img {
+    display: none;
+  }
+  header .common-header .max-width-menu .logo img.phone {
+    display: block;
+    height: 1rem;
+    padding-top: 0.14444444rem;
   }
   header .common-header .max-width-menu .menu-all {
     display: none;
@@ -358,10 +428,13 @@ header .common-header .max-width-menu .menu-list a:hover {
     left: 0;
     right: 0;
     top: 1.17333333rem;
+    height: 100%;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.3);
     padding: 0;
     width: 10rem;
+    z-index: 999;
+    float: none;
   }
   header .common-header .max-width-menu .menu-list .phone-all-list {
     background-color: #FFF;
@@ -422,23 +495,71 @@ header .common-header .max-width-menu .menu-list a:hover {
   }
   .common-footer .content-list {
     width: 10rem;
-    padding-top: 1.26666667rem;
+    padding-top: 0.4rem;
   }
-  .common-footer .content-list .e-mail-icon {
-    width: 8.8rem;
+  .common-footer .content-list .footer-code-head {
+    width: 9.4rem;
+    margin: 0 auto;
+    border-bottom: 1px solid #4a4a4a;
   }
-  .common-footer .content-list .e-mail-icon .e-mail {
-    width: 100%;
+  .common-footer .content-list .footer-code-head .code {
+    width: 1.6rem;
+    left: 0.2rem;
+  }
+  .common-footer .content-list .footer-code-head::after {
+    content: '';
+    clear: both;
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .common-footer .content-list .footer-code-head .head-src {
+    width: 7.8rem;
+    float: right;
+    left: 0;
+    padding-bottom: 0.4rem;
+  }
+  .common-footer .content-list .footer-code-head .head-src a {
+    margin-left: 1.14666667rem;
+    width: 1.33333333rem;
+    font-size: 0.21333333rem;
+    margin-bottom: 0;
+    line-height: 1em;
+  }
+  .common-footer .content-list .link-src {
+    width: 9.4rem;
+    margin: 0 auto;
+    padding-top: 0.50666667rem;
+  }
+  .common-footer .content-list .link-src .hint {
+    top: 0.77333333rem;
+    font-size: 0.21333333rem;
+  }
+  .common-footer .content-list .link-src .list {
+    padding-left: 1.73333333rem;
+    padding-bottom: 0.4rem;
+  }
+  .common-footer .content-list .link-src .list a {
+    font-size: 0.18666667rem;
+    margin-left: 0.16rem;
+    margin-bottom: 0rem;
+    line-height: 1em;
   }
   .common-footer .content-list .href-list {
     height: 4.37333333rem;
     padding: .3rem;
     line-height: 0.54666667rem;
-    font-size: 0.34666667rem;
+    font-size: 0.16rem;
   }
   .common-footer .content-list .href-list .iconfont {
     font-size: 0.90666667rem;
     right: 0.26666667rem;
     top: 0.21333333rem;
+  }
+  .common-footer .content-list .copy-right {
+    padding-top: 0.4rem;
+    font-size: 0.16rem;
+    padding-bottom: 0.4rem;
   }
 }

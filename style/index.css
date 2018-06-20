@@ -443,6 +443,9 @@
     bottom: 0;
     transform: scaleY(0.3333333);
   }
+  .index-block-list .list:last-child::after {
+    display: none;
+  }
   .index-block-list .list .title-deal {
     display: block;
     position: relative;
