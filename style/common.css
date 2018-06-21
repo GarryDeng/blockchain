@@ -545,7 +545,7 @@ header .common-header .max-width-menu .menu-list a:hover {
     border-bottom: 1px solid #4a4a4a;
   }
   .common-footer .content-list .footer-code-head .code {
-    width: 1.6rem;
+    width: 1rem;
     left: 0.2rem;
     top: 0;
   }
@@ -565,7 +565,7 @@ header .common-header .max-width-menu .menu-list a:hover {
     float: right;
     left: 0;
     padding-bottom: 0.4rem;
-    line-height: 1em;
+    line-height: .6em;
     padding-top: 0;
   }
   .common-footer .content-list .footer-code-head .head-src a {
@@ -582,13 +582,13 @@ header .common-header .max-width-menu .menu-list a:hover {
     padding-top: 0.50666667rem;
   }
   .common-footer .content-list .link-src .hint {
-    top: 0.77333333rem;
+    top: .6rem;
     font-size: 0.21333333rem;
   }
   .common-footer .content-list .link-src .list {
     padding-left: 1.73333333rem;
     padding-bottom: 0.4rem;
-    line-height: 1em;
+    line-height: .6em;
   }
   .common-footer .content-list .link-src .list a {
     font-size: 0.18666667rem;
