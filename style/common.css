@@ -251,11 +251,11 @@ header .common-header .max-width-menu .menu-list a:hover {
 .common-footer .content-list .footer-code-head .watch {
   position: absolute;
   right: 0;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   cursor: pointer;
   top: 50%;
-  margin-top: -46px;
+  margin-top: -38px;
 }
 .common-footer .content-list .footer-code-head .watch img {
   width: 100%;
@@ -270,7 +270,7 @@ header .common-header .max-width-menu .menu-list a:hover {
 .common-footer .content-list .footer-code-head .watch:hover img.hover-code {
   display: block;
   position: absolute;
-  top: 60px;
+  top: 50px;
   width: 120px;
   height: 120px;
   right: 0;
@@ -323,7 +323,7 @@ header .common-header .max-width-menu .menu-list a:hover {
     margin-left: 12px;
   }
   header .common-header .max-width-menu .menu-list {
-    width: 560px;
+    width: 562px;
   }
   .common-footer .content-list {
     width: 980px;
@@ -362,7 +362,7 @@ header .common-header .max-width-menu .menu-list a:hover {
 }
 @media screen and (max-width: 1000px) {
   header .common-header .max-width-menu {
-    padding: 0 30px;
+    width: 680px;
   }
   header .common-header .max-width-menu .menu-all {
     padding-right: 18px;
@@ -449,16 +449,16 @@ header .common-header .max-width-menu .menu-list a:hover {
     color: #000;
     position: absolute;
     left: 50%;
-    margin-left: -0.31666667rem;
+    margin-left: -0.63333333rem;
   }
   header .common-header .max-width-menu .logo img {
     display: none;
   }
   header .common-header .max-width-menu .logo img.phone {
     display: block;
-    height: .7rem;
+    height: 1rem;
     padding: 0;
-    margin-top: 0.31666667rem;
+    margin: 0.16666667rem auto 0 auto;
   }
   header .common-header .max-width-menu .menu-all {
     display: none;
@@ -573,6 +573,7 @@ header .common-header .max-width-menu .menu-list a:hover {
     font-size: 0.21333333rem;
     margin-bottom: 0;
     line-height: 1em;
+    text-align: right;
   }
   .common-footer .content-list .link-src {
     width: 9.4rem;

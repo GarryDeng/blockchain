@@ -142,7 +142,8 @@
   line-height: .9em;
   font-size: 36px;
   padding: 0px 9px 3px 9px;
-  border-radius: 9px;
+  border-bottom-left-radius: 9px;
+  border-top-right-radius: 9px;
   color: #999;
   transform: scale(0.3);
   transform-origin: right bottom;
@@ -404,9 +405,9 @@
     font-size: 0.34666667rem;
   }
   .header-banner .position-absolute-search .position-relative .iconfont {
-    font-size: 0.74666667rem;
-    top: 0.16rem;
-    right: 0.53333333rem;
+    font-size: 0.446667rem;
+    top: 0.32rem;
+    right: 0.333333rem;
   }
   .header-banner .position-absolute-search .hot-search {
     width: 8.8rem;
