@@ -498,6 +498,7 @@ header .common-header .max-width-menu .menu-list a:hover {
   header .common-header .max-width-menu .menu-list .clear {
     background-color: #FFF;
     padding-left: 0.4rem;
+    min-height: 6.2rem;
   }
   header .common-header .max-width-menu .menu-list .clear a {
     color: #000;
@@ -573,7 +574,7 @@ header .common-header .max-width-menu .menu-list a:hover {
     font-size: 0.21333333rem;
     margin-bottom: 0;
     line-height: 1em;
-    text-align: right;
+    text-align: left;
   }
   .common-footer .content-list .link-src {
     width: 9.4rem;
