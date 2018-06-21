@@ -228,8 +228,8 @@ header .common-header .max-width-menu .menu-list a:hover {
   position: absolute;
   display: block;
   left: 0;
-  top: 0;
-  width: 120px;
+  top: 26px;
+  width: 90px;
   height: auto;
 }
 .common-footer .content-list .footer-code-head .head-src {
@@ -260,9 +260,12 @@ header .common-header .max-width-menu .menu-list a:hover {
 .common-footer .content-list .footer-code-head .watch img {
   width: 100%;
   display: block;
+  opacity: .6;
 }
 .common-footer .content-list .footer-code-head .watch img.hover-code {
   display: none;
+  opacity: 0;
+  transition: opacity .3s;
 }
 .common-footer .content-list .footer-code-head .watch:hover img.hover-code {
   display: block;
@@ -271,6 +274,7 @@ header .common-header .max-width-menu .menu-list a:hover {
   width: 120px;
   height: 120px;
   right: 0;
+  opacity: 1;
 }
 .common-footer .content-list .link-src {
   padding-top: 30px;
@@ -288,13 +292,14 @@ header .common-header .max-width-menu .menu-list a:hover {
 .common-footer .content-list .link-src .list {
   padding-left: 135px;
   padding-bottom: 30px;
+  line-height: 1em;
 }
 .common-footer .content-list .link-src .list a {
   display: inline-block;
   color: #FFF;
   font-size: 14px;
   margin-left: 15px;
-  margin-bottom: 18px;
+  margin-bottom: 8px;
   line-height: 1em;
   opacity: .6;
 }
@@ -334,16 +339,20 @@ header .common-header .max-width-menu .menu-list a:hover {
     right: 10px;
     top: 14px;
   }
+  .common-footer .content-list .footer-code-head .code {
+    top: 9px;
+  }
   .common-footer .content-list .footer-code-head .head-src {
-    width: 524px;
+    width: 772px;
     margin: 0 auto;
     padding-top: 15px;
     position: relative;
-    left: -30px;
+    left: 0;
     padding-bottom: 36px;
+    padding-top: 30px;
   }
   .common-footer .content-list .footer-code-head .head-src a {
-    margin-left: 73px;
+    margin-left: 12px;
     margin-bottom: 26px;
     text-align: right;
   }
@@ -375,6 +384,7 @@ header .common-header .max-width-menu .menu-list a:hover {
   }
   .common-footer .content-list {
     width: 680px;
+    padding-top: 20px;
   }
   .common-footer .content-list .e-mail-icon {
     width: 620px;
@@ -388,13 +398,15 @@ header .common-header .max-width-menu .menu-list a:hover {
     top: 9px;
   }
   .common-footer .content-list .footer-code-head .head-src {
-    width: 434px;
-    padding-top: 0px;
-    left: -18px;
+    width: 534px;
+    padding-top: 30px;
     padding-bottom: 36px;
   }
   .common-footer .content-list .footer-code-head .head-src a {
-    margin-left: 36px;
+    margin-left: 10px;
+    text-align: center;
+    font-size: 12px;
+    width: auto;
   }
   .common-footer .content-list .copy-right {
     padding-bottom: 20px;
@@ -534,6 +546,7 @@ header .common-header .max-width-menu .menu-list a:hover {
   .common-footer .content-list .footer-code-head .code {
     width: 1.6rem;
     left: 0.2rem;
+    top: 0;
   }
   .common-footer .content-list .footer-code-head .watch {
     display: none;
@@ -552,6 +565,7 @@ header .common-header .max-width-menu .menu-list a:hover {
     left: 0;
     padding-bottom: 0.4rem;
     line-height: 1em;
+    padding-top: 0;
   }
   .common-footer .content-list .footer-code-head .head-src a {
     margin-left: 1.14666667rem;

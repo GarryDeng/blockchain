@@ -202,9 +202,9 @@ header{
         position: absolute;
         display: block;
         left: 0;
-        top: 0;
+        top: 26px;
         // transform: translateY(-50%);
-        width: 120px;
+        width: 90px;
         height: auto;
       }
       .head-src{
@@ -235,8 +235,11 @@ header{
         img{
           width: 100%;
           display: block;
+          opacity: .6;
           &.hover-code{
             display: none;
+            opacity: 0;
+            transition: opacity .3s;
           }
         }
         &:hover{
@@ -248,6 +251,7 @@ header{
             width: 120px;
             height: 120px;
             right: 0;
+            opacity: 1;
           }
         }
       }
@@ -267,12 +271,13 @@ header{
       .list{
         padding-left: 135px;
         padding-bottom: 30px;
+        line-height: 1em;
         a{
           display: inline-block;
           color: #FFF;
           font-size: 14px;
           margin-left: 15px;
-          margin-bottom: 18px;
+          margin-bottom: 8px;
           line-height: 1em;
           opacity: .6;
           &:hover{
@@ -363,17 +368,23 @@ header{
         top: 14px;
       }
     }
-    .footer-code-head .head-src{
-      width: 444+80px;
-      margin: 0 auto;
-      padding-top: 15px;
-      position: relative;
-      left: -30px;
-      padding-bottom: 36px;
-      a{
-        margin-left: 73px;
-        margin-bottom: 26px;
-        text-align: right;
+    .footer-code-head{
+      .code{
+        top: 9px;
+      }
+      .head-src{
+        width: 772px;
+        margin: 0 auto;
+        padding-top: 15px;
+        position: relative;
+        left: 0;
+        padding-bottom: 36px;
+        padding-top: 30px;
+        a{
+          margin-left: 12px;
+          margin-bottom: 26px;
+          text-align: right;
+        }
       }
     }
     .copy-right{
@@ -430,6 +441,7 @@ header{
   }
   .common-footer .content-list{
     width: 680px;
+    padding-top: 20px;
     .e-mail-icon{
       width: 620px;
       .e-mail{
@@ -442,12 +454,15 @@ header{
       }
     }
     .footer-code-head .head-src {
-      width: 434px;
-      padding-top: 0px;
-      left: -18px;
+      width: 534px;
+      padding-top: 30px;
+      // left: -18px;
       padding-bottom: 36px;
       a{
-        margin-left: 36px;
+        margin-left: 10px;
+        text-align: center;
+        font-size: 12px;
+        width: auto;
       }
     }
     .copy-right{
@@ -594,6 +609,7 @@ header{
       .code{
         width: 120/75rem;
         left: 15/75rem;
+        top: 0;
       }
       .watch{
         display: none;
@@ -612,6 +628,7 @@ header{
         left: 0;
         padding-bottom: 30/75rem;
         line-height: 1em;
+        padding-top: 0;
         a{
           margin-left: 86/75rem;
           width: 100/75rem;

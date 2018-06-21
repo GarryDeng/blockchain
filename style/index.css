@@ -131,6 +131,23 @@
   margin-bottom: 34px;
   background-color: #FFF;
 }
+.index-block-list .list .list-width a.vpn {
+  position: relative;
+}
+.index-block-list .list .list-width a.vpn::before {
+  content: "vpn";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  line-height: .9em;
+  font-size: 36px;
+  padding: 0px 9px 3px 9px;
+  border-radius: 9px;
+  color: #999;
+  transform: scale(0.3);
+  transform-origin: right bottom;
+  border: 1px solid #999;
+}
 .index-block-list .list .list-width a img {
   width: 30px;
   display: inline-block;
