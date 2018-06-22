@@ -160,15 +160,43 @@ header .common-header .max-width-menu .logo {
   width: 138px;
   height: 70px;
   color: #FFF;
+  position: relative;
+}
+header .common-header .max-width-menu .logo::after {
+  content: "";
+  background: url(../images/logo_text.png) no-repeat center;
+  background-size: auto 35px;
+  height: 70px;
+  width: 143px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  transition: all .7s ease;
 }
 header .common-header .max-width-menu .logo img {
   height: 50px;
   padding-top: 10px;
   width: auto;
   display: block;
+  position: absolute;
+  left: -63px;
+  top: 0;
+  opacity: 0;
+  transition: all .7s ease;
 }
 header .common-header .max-width-menu .logo img.phone {
   display: none;
+  left: 0;
+  opacity: 1;
+}
+header .common-header .max-width-menu .logo.active-logo::after {
+  left: 120px;
+  opacity: 0;
+}
+header .common-header .max-width-menu .logo.active-logo img {
+  left: 0;
+  opacity: 1;
 }
 header .common-header .max-width-menu .menu-all {
   font-size: 14px;
@@ -459,6 +487,9 @@ header .common-header .max-width-menu .menu-list a:hover {
     height: 1rem;
     padding: 0;
     margin: 0.16666667rem auto 0 auto;
+  }
+  header .common-header .max-width-menu .logo::after {
+    display: none;
   }
   header .common-header .max-width-menu .menu-all {
     display: none;
