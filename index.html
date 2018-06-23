@@ -18,20 +18,13 @@
                     <img src="images/logo-pc.png" alt="">
                     <img class="phone" src="images/logo.png" alt="">
                 </div>
-                <!-- <div class="fr phone-menu-list">
-                    <a href="">交易所</a>
-                    <a href="">信息网</a>
-                    <a href="">落地项目</a>
-                    <a href="">钱包</a>
-                    <a href="">游戏</a>
-                </div> -->
                 <div class="fr phone-line-three"><img src="images/line.png" alt=""></div>
                 <div class="fr menu-all">全部分类</div>
                 <div class="fr menu-list">
                     <p class="phone-all-list">全部分类</p>
                     <div class="clear">
-                        <a class="active" href="">区块链交易</a>
-                        <a href="">区块链信息</a>
+                        <a class="active" href="./#exchange">区块链交易</a>
+                        <a href="./#message">区块链信息</a>
                         <a href="">落地项目</a>
                         <a href="">数字货币</a>
                         <a href="">区块链游戏</a>
@@ -89,19 +82,27 @@
     </div>
     <script>
         // 搜索一下
-        document.getElementById('search').onclick = function () {
+        document.getElementById('search').onclick = function() {
+            searchInput()
+        };
+        function searchInput() {
             var val = document.getElementsByClassName('search')[0].value;
             if (val == '') return false;
             location.href = '/search.html';
         }
+        $(window).on('keyup',function(ev){
+            if(ev.keyCode===13){
+                searchInput()
+            }
+        })
     </script>
-    <div class="index-block-list">
+    <div class="index-block-list" data-srcoll="exchange">
         <div class="title">
             区块链交易所
         </div>
         <div class="list">
             <span class="title-deal">币币交易 <i class="iconfont">&#xe649;</i></span>
-            <div class="clear list-width">
+            <div data-id="1" class="clear list-width">
                 <!-- 带vpn标识 -->
                 <a class="vpn" href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
@@ -158,7 +159,7 @@
             <span class="title-deal">场外交易
                 <i class="iconfont">&#xe649;</i>
             </span>
-            <div class="clear list-width">
+            <div data-id="2" class="clear list-width">
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
                     <span>PreAngle</span>
@@ -216,7 +217,7 @@
             <span class="title-deal">杠杆交易
                 <i class="iconfont">&#xe649;</i>
             </span>
-            <div class="clear list-width">
+            <div data-id="3" class="clear list-width">
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
                     <span>PreAngle</span>
@@ -274,7 +275,7 @@
             <span class="title-deal">现货交易
                 <i class="iconfont">&#xe649;</i>
             </span>
-            <div class="clear list-width">
+            <div data-id="4" class="clear list-width">
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
                     <span>PreAngle</span>
@@ -332,7 +333,7 @@
             <span class="title-deal">期货交易
                 <i class="iconfont">&#xe649;</i>
             </span>
-            <div class="clear list-width">
+            <div data-id="5" class="clear list-width">
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
                     <span>PreAngle</span>
@@ -387,12 +388,12 @@
             </i>
         </div>
     </div>
-    <div class="index-block-list index-block-white">
+    <div  data-srcoll="message" class="index-block-list index-block-white">
         <div class="title">
             区块链信息网
         </div>
         <div class="list">
-            <div class="clear list-width">
+            <div data-id='6' class="clear list-width">
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
                     <span>PreAngle</span>
@@ -452,7 +453,7 @@
             区块链落地项目
         </div>
         <div class="list">
-            <div class="clear list-width">
+            <div data-id='7' class="clear list-width">
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
                     <span>PreAngle</span>
@@ -525,7 +526,7 @@
             数字货币钱包
         </div>
         <div class="list">
-            <div class="clear list-width">
+            <div data-id="8" class="clear list-width">
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
                     <span>PreAngle</span>
@@ -585,7 +586,7 @@
             区块链游戏
         </div>
         <div class="list">
-            <div class="clear list-width">
+            <div data-id="9" class="clear list-width">
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
                     <span>PreAngle</span>
@@ -648,7 +649,7 @@
             <span class="title-deal">矿池
                 <i class="iconfont">&#xe649;</i>
             </span>
-            <div class="clear list-width">
+            <div data-id="10" class="clear list-width">
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
                     <span>PreAngle</span>
@@ -706,7 +707,7 @@
             <span class="title-deal">矿区
                 <i class="iconfont">&#xe649;</i>
             </span>
-            <div class="clear list-width">
+            <div data-id="11" class="clear list-width">
                 <a href="">
                     <img src="//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png" alt="">
                     <span>PreAngle</span>
@@ -814,5 +815,38 @@
         </div>
     </footer>
     <script src="js/common.js"></script>
+    <script>
+        var hash = window.location.hash.replace('#','');
+        $('.max-width-menu .menu-list a').on('click',function(){
+            var topHash = $(this).attr('href').replace('./#',"");
+            scrollTopCli(topHash);
+        })
+        function scrollTopCli(topHash) {
+            if(topHash=='') return false; 
+            var scrollTopTime = $('.index-block-list[data-srcoll="'+ topHash+'"]')[0].offsetTop - 60;
+            $('html,body').animate( {'scrollTop' : scrollTopTime} );
+        }
+        scrollTopCli(hash)
+        $('.index-block-list .arrow').on('click',function(){
+            var _this = $(this);
+            //区别点击的更多
+            var data_id = _this.siblings('.list-width').attr('data-id');
+            // console.log(data_id)
+            var data = [
+                {'src':'aaa','text':'YouTube','img':'//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png'},
+                {'src':'aaa','text':'YouTube','img':'//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png'},
+                {'src':'aaa','text':'YouTube','img':'//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png'},
+                {'src':'aaa','text':'YouTube','img':'//img.alicdn.com/tps/TB1ld1GNFXXXXXLapXXXXXXXXXX-200-200.png'},
+            ];
+            for (var i=0;i<data.length;i++) {
+                var bodyHtml = "<a href='" + data[i].src + "'>" +
+                        '<img src="'+ data[i].img + '" alt="">' +
+                        '<span>'+data[i].text + data_id +'</span>'+
+                    "</a>";
+                console.log(bodyHtml)
+                _this.siblings('.list-width').append(bodyHtml);
+            }
+        });
+    </script>
 </body>
 </html>
