@@ -603,12 +603,17 @@ header .common-header .max-width-menu .menu-list a:hover {
     overflow: hidden;
   }
   .common-footer .content-list .footer-code-head .head-src {
-    width: 7.8rem;
+    width: 8.6rem;
     float: right;
     left: 0;
-    padding-bottom: 0.4rem;
+    padding-bottom: .6rem;
     line-height: .6em;
-    padding-top: 0;
+    padding-top: .2rem;
+  }
+  .common-footer .content-list .footer-code-head .head-src span {
+    color: #FFF;
+    opacity: .6;
+    font-size: 0.26666667rem;
   }
   .common-footer .content-list .footer-code-head .head-src a {
     margin-left: 1.14666667rem;
@@ -617,6 +622,7 @@ header .common-header .max-width-menu .menu-list a:hover {
     margin-bottom: 0;
     line-height: 1em;
     text-align: left;
+    display: none;
   }
   .common-footer .content-list .link-src {
     width: 9.4rem;
@@ -624,7 +630,7 @@ header .common-header .max-width-menu .menu-list a:hover {
     padding-top: 0.50666667rem;
   }
   .common-footer .content-list .link-src .hint {
-    top: .6rem;
+    top: .52rem;
     font-size: 0.21333333rem;
   }
   .common-footer .content-list .link-src .list {
