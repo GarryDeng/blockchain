@@ -392,6 +392,17 @@ header .common-header .max-width-menu .menu-list a:hover {
   header .common-header .max-width-menu {
     width: 680px;
   }
+  header .common-header .max-width-menu .logo img {
+    height: 36px;
+    padding-top: 17px;
+  }
+  header .common-header .max-width-menu .logo::after {
+    background: url(../images/logo_text.png) no-repeat left center;
+    background-size: auto 22px;
+  }
+  header .common-header .max-width-menu .logo.active-logo::after {
+    left: 90px;
+  }
   header .common-header .max-width-menu .menu-all {
     padding-right: 18px;
     margin-left: 12px;

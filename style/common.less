@@ -425,15 +425,23 @@ header{
 }
 @media screen and (max-width: 1000px) {
   header{
-    // height: 88px;
     .common-header{
-      // height: 88px;
       .max-width-menu{
-        // line-height: 88px;
-        // padding: 0 30px;
         width: 680px;
+        .logo{
+          img{
+            height: 36px;
+            padding-top: 17px;
+          }
+          &::after{
+            background: url(../images/logo_text.png) no-repeat left center;
+            background-size: auto 22px;
+          }
+          &.active-logo::after {
+              left: 90px;
+          }
+        }
         .menu-all{
-          // font-size: 16px;
           padding-right: 18px;
           margin-left: 12px;
           &::before {
@@ -445,10 +453,6 @@ header{
               border-right: 5px solid transparent;
           }
         }
-        // .logo{
-        //   width: 138*.8px;
-        //   height: 110*.8px;
-        // }
         .menu-list {
           width: 450px;
           // padding-top: 20px;
