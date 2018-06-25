@@ -57,9 +57,15 @@
         $(".max-width-menu .menu-list").on('click',function(ev){
             if($(ev.target).parents().length === 5) $(this).fadeOut();
         });
+        var menuList = $(".max-width-menu .menu-list");
+        $(".max-width-menu").on('click',function(){
+            if(menuList[0].style.display == 'block') menuList.fadeOut();
+        })
         //手机端导航条线索
-        $('.phone-line-three').on('click',function(){
-            $(".max-width-menu .menu-list").fadeToggle();
+        $('.phone-line-three').on('click',function(ev){
+            ev.stopPropagation();
+            if (menuList[0].style.display == 'block') return menuList.fadeOut();
+            menuList.fadeIn();
         });
     </script>
     <div class="header-banner">
