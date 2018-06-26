@@ -265,6 +265,9 @@ header .common-header .max-width-menu .menu-list a:hover {
   padding-top: 60px;
   padding-bottom: 90px;
 }
+.common-footer .content-list .footer-code-head .head-src span {
+  display: none;
+}
 .common-footer .content-list .footer-code-head .head-src a {
   font-size: 14px;
   color: #FFF;
@@ -611,6 +614,7 @@ header .common-header .max-width-menu .menu-list a:hover {
     padding-top: .2rem;
   }
   .common-footer .content-list .footer-code-head .head-src span {
+    display: block;
     color: #FFF;
     opacity: .6;
     font-size: 0.26666667rem;
